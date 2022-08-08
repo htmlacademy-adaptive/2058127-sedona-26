@@ -10,7 +10,7 @@
 <body class="body">
   <header class="header">
     <a class="header__main-nav" href="#">
-      <img class="logo" src="img/logo.svg" width="185" height="96" alt="Логотип."></img>
+      <img class="logo" src="img/logo.svg" width="185" height="96" alt="Логотип.">
     </a>
     <nav class="nav">
       <div class="main-nav__wrapper">
@@ -38,17 +38,17 @@
         </ul>
         <!-- Меню для мобильной версии
         <div clas="nav__list user-list">
-          <img class="user-list__menu" src="../source/img/icon-menu.svg" alt="Открыть меню" href="#">
+          <img class="user-list__menu" src="../source/img/icon-menu.svg" alt="Открыть меню." href="#">
         </div>
       -->
       </div>
     </nav>
   </header>
   <main class="content">
-    <div class="content__intro intro">
-      <img class="intro-background" src="../source/img/intro-background.svg" alt="Фото каньона на заднем плане.">
-      <img class="intro-background-name" src="../source/img/intro-background-name.svg" alt="Надпись Седона">
-      <img class="intro-triangle" src="../source/img/intro-triangle.svg">
+    <div class="content__intro-index intro">
+      <img class="content__intro-img-background" src="../source/img/index-intro-background.svg"
+        alt="Welcome yo the gergeous. Sedona. Because the Gtand Canyon sucks!">
+      <img class="content__intro-triangle" src="../source/img/intro-triangle.svg" alt=".">
     </div>
     <div class="content__title">
       <h1 class="content__title content-head">Оставьте свой отзыв</h1>
@@ -75,31 +75,31 @@
     </div>
     <div class="content__rating content-rating">
       <h2 class="content-rating-title">Ваше общее впечатление</h2>
-      <input class="content-rating-radio" type="radio" id="content-rating-radio" value="Скорее положительное"
-        checked><label for="content-rating-radio">Скорее положительное</label>
-      <input class="content-rating-radio" type="radio" id="content-rating-radio" value="Скорее отрицательное"><label
-        for="content-rating-radio">Скорее отрицательное</label>
-      <input class="content-rating-radio" type="radio" id="content-rating-radio" value="Затрудняюсь ответить"><label
-        for="content-rating-radio">Затрудняюсь ответить</label>
+      <input class="content-rating-radio" type="radio" id="content-rating-radio-positive" value="Скорее положительное"
+        checked><label for="content-rating-radio-positive">Скорее положительное</label>
+      <input class="content-rating-radio" type="radio" id="content-rating-radio-negative" value="Скорее отрицательное"><label
+        for="content-rating-radio-negative">Скорее отрицательное</label>
+      <input class="content-rating-radio" type="radio" id="content-rating-radio-none" value="Затрудняюсь ответить"><label
+        for="content-rating-radio-none">Затрудняюсь ответить</label>
     </div>
     <div class="content__attraction content-attraction">
       <h2 class="content-attraction-title">Посещенные достопримечательности:</h2>
-      <section class="content-attraction-check"><span class="visually-hidden">Выбор посещенных
+      <div class="content-attraction-check"><span class="visually-hidden">Выбор посещенных
           достопримечательностей.</span>
-        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox" value="Мост Дьявола"
-          checked><label for="content-attraction-checkbox">Мост Дьявола</label>
-        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox" value="Гора-Колокол"
-          checked><label for="content-attraction-checkbox">Гора-Колокол</label>
-        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox" value="Слайд-парк"
-          checked><label for="content-attraction-checkbox">Слайд парк</label>
-        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox"
-          value="Красные скалы"><label for="content-attraction-checkbox">Красные скалы</label>
-      </section>
+        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox-1" value="Мост Дьявола"
+          checked><label for="content-attraction-checkbox-1">Мост Дьявола</label>
+        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox-2" value="Гора-Колокол"
+          checked><label for="content-attraction-checkbox-2">Гора-Колокол</label>
+        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox-3" value="Слайд-парк"
+          checked><label for="content-attraction-checkbox-3">Слайд парк</label>
+        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox-4"
+          value="Красные скалы"><label for="content-attraction-checkbox-4">Красные скалы</label>
+      </div>
     </div>
     <div class="content__review content-review">
       <h2 class="content-review-title">Опишите свои эмоции:</h2>
-      <textarea class="content-review-textarea" value="Опишите подробно все свои восторги">Опишите подробно все свои восторги</textarea>
-      <button class="content-review-button" type="form" value="Отправить отзыв">Отправить отзыв</button>
+      <textarea class="content-review-textarea">Опишите подробно все свои восторги</textarea>
+      <button class="content-review-button" type="button" value="Отправить отзыв">Отправить отзыв</button>
     </div>
 
   </main>
@@ -144,11 +144,11 @@
         </a>
       </li>
     </ul>
-    <a class="footer__academy-logo">Разработано</a>
-    <img class="footer__academy-logo" href="https://htmlacademy.ru/" src="../source/img/htmlacademy.svg"
-      alt="Логотип Академии" width="26.9" height="34.1">
+    <a class="footer__academy-logo" href="https://htmlacademy.ru/">Разработано</a>
+    <a class="footer__academy-logo-url" href="https://htmlacademy.ru/"><img class="footer__academy-logo" src="../source/img/htmlacademy.svg"
+      alt="Логотип Академии" width="27" height="34"><span class="visually-hidden">Логотип академии</span></a>
   </footer>
-</body>
+
 <div class="modal__error modal-error modal">
   <h2 class="modal-error-title">Что-то пошло не так!</h2>
   <h3 class="modal-error-description">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</h3>
@@ -160,5 +160,7 @@
     опубликуем его на сайте.</h3>
   <button class="modal-success-button" type="button" value="Закрыть окно.">Закрыть окно</button>
 </div>
+
+</body>
 
 </html>
