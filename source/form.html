@@ -50,63 +50,56 @@
         alt="Welcome yo the gergeous. Sedona. Because the Gtand Canyon sucks!">
       <img class="content__intro-triangle" src="../source/img/intro-triangle.svg" alt=".">
     </div>
-    <div class="advantages">
-      <div class="advantages__title theme-light">
-        <h1 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </div>
-      <div class="advantages__item advantages-item theme-dark">
-        <h2 class="advantages-item-title">Настоящий городок</h2>
-        <h3 class="advantages-item-sub">— №1 —</h3>
-        <h4 class="advantages-item-description">Седона не аттракцион дял туристов, там течет своя жизнь</h4>
-      </div>
-      <img class="city-img-background" src="../source/img/city-img.svg" alt="Фото города.">
-      <div class="advantages__list advantages-list theme-light">
-        <img class="advantages-list-photo" src="../source/img/icon-house.svg" alt="Иконка дома.">
-        <h2 class="advantages-list-title">Жильё</h2>
-        <h3 class="advantages-list-sub">Рекомендуем пожить в настоящем мотеле, все как в кино!</h3>
-      </div>
-      <div class="advantages__list advantages-list theme-light">
-        <img class="advantages-list-photo" src="../source/img/icon-burger.svg" alt="Иконка бургера">
-        <h2 class="advantages-list-title">Еда</h2>
-        <h3 class="advantages-list-sub">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</h3>
-      </div>
-      <div class="advantages__list advantages-list theme-light">
-        <img class="advantages-list-photo" src="../source/img/icon-gift.svg" alt="Иконка подарка с бантом.">
-        <h2 class="advantages-list-title">Сувениры</h2>
-        <h3 class="advantages-list-sub">Не только китайского, но и местного производства!</h3>
-      </div>
-      <div class="advantages__item advantages-item theme-dark">
-        <h2 class="advantages-item-title">Там есть мост Дьявола</h2>
-        <h3 class="advantages-item-sub">— №2 —</h3>
-        <h4 class="advantages-item-description">Да, по нему можно пройтись! Если Вы осмелитесь, конечно</h4>
-      </div>
-      <img class="advantages-list-photo" src="../source/img/photo-bridge.svg" alt="Вид на каньон сверху.">
-      <div class="advantages__list advantages-list theme-modified">
-        <h2 class="advantages-list-title">Небольшая площадь</h2>
-        <h3 class="advantages-list-sub">— №3 —</h3>
-        <h4 class="advantages-list-description">Все интересные места находятся очень близко</h4>
-      </div>
-      <div class="advantages__list advantages-list theme-modified">
-        <h2 class="advantages-list-title">Красивая дорога</h2>
-        <h3 class="advantages-list-sub">— №4 —</h3>
-        <h4 class="advantages-list-description">Ехать в Седонуиз Лас-Вегаса совсем не скучно!</h4>
-      </div>
-      <div class="advantages__list advantages-list theme-modified">
-        <h2 class="advantages-list-title">Мало туристов</h2>
-        <h3 class="advantages-list-sub">— №5 —</h3>
-        <h4 class="advantages-list-description">Большинство едет в Гранд Каньон и толпится там</h4>
+    <div class="content__title">
+      <h1 class="content__title content-head">Оставьте свой отзыв</h1>
+      <h2 class="content-head-sub">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами
+        достопримечательностях</h2>
+    </div>
+    <div class="content__introduce content-introduce">
+      <h2 class="content-introduce-title">Представьтесь:</h2>
+      <p class="content-introduce-description">Имя*:</p>
+      <input class="content-introduce-text-area" type="text" value="Пётр">
+      <p class="content-introduce-description">Фамилия*:</p>
+      <input class="content-introduce-text-area" type="text" value="Пустота">
+      <p class="content-introduce-description">Отчество*:</p>
+      <input class="content-introduce-text-area" type="text" value="Викторович">
+    </div>
+    <div class="content__information content-information">
+      <h2 class="content-iformation-title">Контактная информация</h2>
+      <p class="content-information-description">Контактный телефон*:</p>
+      <input class="content-iformation-text" type="tel" value="Введите телефон">
+      <img class="telephone-img" src="../source/img/telephone-img.svg" alt="Иконка телефона">
+      <p class="content-information-description">Электронная почта*:</p>
+      <input class="content-iformation-text" type="tel" value="Введите e-mail">
+      <img class="telephone-img" src="../source/img/email-img.svg" alt="Иконка почты">
+    </div>
+    <div class="content__rating content-rating">
+      <h2 class="content-rating-title">Ваше общее впечатление</h2>
+      <input class="content-rating-radio" type="radio" id="content-rating-radio-positive" value="Скорее положительное"
+        checked><label for="content-rating-radio-positive">Скорее положительное</label>
+      <input class="content-rating-radio" type="radio" id="content-rating-radio-negative"
+        value="Скорее отрицательное"><label for="content-rating-radio-negative">Скорее отрицательное</label>
+      <input class="content-rating-radio" type="radio" id="content-rating-radio-none"
+        value="Затрудняюсь ответить"><label for="content-rating-radio-none">Затрудняюсь ответить</label>
+    </div>
+    <div class="content__attraction content-attraction">
+      <h2 class="content-attraction-title">Посещенные достопримечательности:</h2>
+      <div class="content-attraction-check"><span class="visually-hidden">Выбор посещенных
+          достопримечательностей.</span>
+        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox-1"
+          value="Мост Дьявола" checked><label for="content-attraction-checkbox-1">Мост Дьявола</label>
+        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox-2"
+          value="Гора-Колокол" checked><label for="content-attraction-checkbox-2">Гора-Колокол</label>
+        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox-3" value="Слайд-парк"
+          checked><label for="content-attraction-checkbox-3">Слайд парк</label>
+        <input class="content-attraction-checkbox" type="checkbox" id="content-attraction-checkbox-4"
+          value="Красные скалы"><label for="content-attraction-checkbox-4">Красные скалы</label>
       </div>
     </div>
-    <div class="wonder">
-      <h2 class="wonder__title">Заинтерисовались?</h2>
-      <h3 class="wonder__description">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения
-        гостиниц в Седоне</h3>
-      <button class="main__wonder-button" type="button" value="Найти гостиницу.">Найти гостиницу</button>
-    </div>
-    <div class="map">
-      <img class="map__image" src="../source/img/map-mobile.svg" alt="Карта.">
-      <img class="map__marker" src="../source/img/map-marker.svg" alt="Маркер на карте.">
+    <div class="content__review content-review">
+      <h2 class="content-review-title">Опишите свои эмоции:</h2>
+      <textarea class="content-review-textarea">Опишите подробно все свои восторги</textarea>
+      <button class="content-review-button" type="button" value="Отправить отзыв">Отправить отзыв</button>
     </div>
 
   </main>
@@ -156,6 +149,18 @@
         src="../source/img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span
         class="visually-hidden">Логотип академии</span></a>
   </footer>
+
+  <div class="modal__error modal-error modal">
+    <h2 class="modal-error-title">Что-то пошло не так!</h2>
+    <h3 class="modal-error-description">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</h3>
+    <button class="modal-error-button" type="button" value="Ок.">Ок</button>
+  </div>
+  <div class="modal__success modal-success modal">
+    <h2 class="modal-success-title">Ваш отзыв отправлен!</h2>
+    <h3 class="modal-success-description">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайщее время мы
+      опубликуем его на сайте.</h3>
+    <button class="modal-success-button" type="button" value="Закрыть окно.">Закрыть окно</button>
+  </div>
 
 </body>
 
