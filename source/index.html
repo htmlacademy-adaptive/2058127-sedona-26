@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="../source/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="body">
   <header class="header">
-    <a class="header__logo" href="#">
-      <img class="logo" src="img/logo.svg" width="185" height="96" alt="Логотип.">
+    <a class="logo" href="#">
+      <img class="logo__img" src="img/logo.svg" width="185" height="96" alt="Логотип.">
     </a>
     <nav class="nav">
       <div class="nav__wrapper">
@@ -21,12 +21,12 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="form.html">
               Форма отзыва
             </a>
           </li>
@@ -37,14 +37,14 @@
           </li>
         </ul>
         <button class="header__toggle toggle">
-          <img class="toggle__menu" src="../source/img/icon-menu.svg" alt="Открыть меню." href="#">
+          <img class="toggle__menu" src="img/icon-menu.svg" alt="Открыть меню." href="#">
         </button>
       </div>
     </nav>
   </header>
   <main class="content">
     <div class="content__intro-index intro">
-      <img class="intro__img" src="../source/img/index-intro-background.svg"
+      <img class="intro__img" src="img/index-intro-background.svg"
         alt="Welcome yo the gergeous. Sedona. Because the Gtand Canyon sucks!">
     </div>
     <div class="advantages">
@@ -53,61 +53,61 @@
         <p class="advantages__description main-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <div class="advantages__item advantages-item theme-dark">
-        <h2 class="advantages-item-title">Настоящий городок</h2>
-        <h3 class="advantages-item-sub">— №1 —</h3>
-        <h4 class="advantages-item-description">Седона не аттракцион дял туристов, там течет своя жизнь</h4>
+        <h2 class="advantages-item__title">Настоящий городок</h2>
+        <h3 class="advantages-item__sub">— №1 —</h3>
+        <h4 class="advantages-item__description">Седона не аттракцион дял туристов, там течет своя жизнь</h4>
       </div>
-      <img class="city-img-background" src="../source/img/city-img.svg" alt="Фото города.">
+      <img class="advantages__city-img" src="img/city-img.svg" alt="Фото города.">
       <div class="advantages__list advantages-list theme-light">
-        <img class="advantages-list-photo" src="../source/img/icon-house.svg" alt="Иконка дома.">
-        <h2 class="advantages-list-title">Жильё</h2>
-        <h3 class="advantages-list-sub">Рекомендуем пожить в настоящем мотеле, все как в кино!</h3>
-      </div>
-      <div class="advantages__list advantages-list theme-light">
-        <img class="advantages-list-photo" src="../source/img/icon-burger.svg" alt="Иконка бургера">
-        <h2 class="advantages-list-title">Еда</h2>
-        <h3 class="advantages-list-sub">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</h3>
+        <img class="advantages-list__photo" src="img/icon-house.svg" alt="Иконка дома.">
+        <h2 class="advantages-list__title">Жильё</h2>
+        <h3 class="advantages-list__sub">Рекомендуем пожить в настоящем мотеле, все как в кино!</h3>
       </div>
       <div class="advantages__list advantages-list theme-light">
-        <img class="advantages-list-photo" src="../source/img/icon-gift.svg" alt="Иконка подарка с бантом.">
-        <h2 class="advantages-list-title">Сувениры</h2>
-        <h3 class="advantages-list-sub">Не только китайского, но и местного производства!</h3>
+        <img class="advantages-list__photo" src="img/icon-burger.svg" alt="Иконка бургера">
+        <h2 class="advantages-list__title">Еда</h2>
+        <h3 class="advantages-list__sub">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</h3>
+      </div>
+      <div class="advantages__list advantages-list theme-light">
+        <img class="advantages-list__photo" src="img/icon-gift.svg" alt="Иконка подарка с бантом.">
+        <h2 class="advantages-list__title">Сувениры</h2>
+        <h3 class="advantages-list__sub">Не только китайского, но и местного производства!</h3>
       </div>
       <div class="advantages__item advantages-item theme-dark">
-        <h2 class="advantages-item-title">Там есть мост Дьявола</h2>
-        <h3 class="advantages-item-sub">— №2 —</h3>
-        <h4 class="advantages-item-description">Да, по нему можно пройтись! Если Вы осмелитесь, конечно</h4>
+        <h2 class="advantages-item__title">Там есть мост Дьявола</h2>
+        <h3 class="advantages-item__sub">— №2 —</h3>
+        <h4 class="advantages-item__description">Да, по нему можно пройтись! Если Вы осмелитесь, конечно</h4>
       </div>
-      <img class="advantages-list-photo" src="../source/img/photo-bridge.svg" alt="Вид на каньон сверху.">
-      <div class="advantages__list advantages-list theme-modified">
-        <h2 class="advantages-list-title">Небольшая площадь</h2>
-        <h3 class="advantages-list-sub">— №3 —</h3>
-        <h4 class="advantages-list-description">Все интересные места находятся очень близко</h4>
+      <img class="advantages-list__bridge" src="img/photo-bridge.svg" alt="Вид на каньон сверху.">
+      <div class="text theme-modified">
+        <h2 class="text__title">Небольшая площадь</h2>
+        <h3 class="text__sub">— №3 —</h3>
+        <h4 class="text__description">Все интересные места находятся очень близко</h4>
       </div>
-      <div class="advantages__list advantages-list theme-modified">
-        <h2 class="advantages-list-title">Красивая дорога</h2>
-        <h3 class="advantages-list-sub">— №4 —</h3>
-        <h4 class="advantages-list-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</h4>
+      <div class="text theme-modified">
+        <h2 class="text__title">Красивая дорога</h2>
+        <h3 class="text__sub">— №4 —</h3>
+        <h4 class="text__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</h4>
       </div>
-      <div class="advantages__list advantages-list theme-modified">
-        <h2 class="advantages-list-title">Мало туристов</h2>
-        <h3 class="advantages-list-sub">— №5 —</h3>
-        <h4 class="advantages-list-description">Большинство едет в Гранд Каньон и толпится там</h4>
+      <div class="text theme-modified">
+        <h2 class="text__title">Мало туристов</h2>
+        <h3 class="text__sub">— №5 —</h3>
+        <h4 class="text__description">Большинство едет в Гранд Каньон и толпится там</h4>
       </div>
     </div>
-    <div class="wonder">
+    <div class="wonder theme-light">
       <h2 class="wonder__title">Заинтерисовались?</h2>
       <h3 class="wonder__description">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения
         гостиниц в Седоне</h3>
       <button class="wonder__button button" type="button" value="Найти гостиницу.">Найти гостиницу</button>
     </div>
     <div class="map">
-      <img class="map__image" src="../source/img/map-mobile.svg" alt="Карта.">
-      <img class="map__marker" src="../source/img/map-marker.svg" alt="Маркер на карте.">
+      <img class="map__image" src="img/map-mobile.svg" alt="Карта.">
+      <img class="map__marker" src="img/map-marker.svg" alt="Маркер на карте.">
     </div>
 
   </main>
-  <footer class="footer">
+  <footer class="footer theme-light">
     <span class="footer__title">#visitSEDONA</span>
     <ul class="footer__socials socials">
       <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">VKontakte</span>
@@ -150,7 +150,7 @@
     </ul>
     <a class="footer__academy-logo" href="https://htmlacademy.ru/">Разработано</a>
     <a class="footer__academy-logo-url" href="https://htmlacademy.ru/"><img class="footer__academy-logo"
-        src="../source/img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span
+        src="img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span
         class="visually-hidden">Логотип академии</span></a>
   </footer>
 

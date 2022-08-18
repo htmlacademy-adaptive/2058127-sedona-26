@@ -1,18 +1,74 @@
-.body {
-  background: #e7e5e5;
-}
-
-.visually-hidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-}
-
-.modal {
-  display: none;
-}
+@import "./blocks/fonts.scss";
+@import "./blocks/theme-light.scss";
+@import "./blocks/theme-dark.scss";
+@import "./blocks/body.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/visually-hiden.scss";
+@import "./blocks/logo__img.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/site-list__item.scss";
+@import "./blocks/site-list__item__active.scss";
+@import "./blocks/site-list__link.scss";
+@import "./blocks/toggle.scss";
+@import "./blocks/content.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/intro__img.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/advantages__title";
+@import "./blocks/advantages__head";
+@import "./blocks/advantages__description.scss";
+@import "./blocks/advantages__item.scss";
+@import "./blocks/advantages-item.scss";
+@import "./blocks/advantages-item__title.scss";
+@import "./blocks/advantages-item__sub.scss";
+@import "./blocks/advantages-item__description.scss";
+@import "./blocks/advantages__city-img.scss";
+@import "./blocks/advantages__list.scss";
+@import "./blocks/advantages-list.scss";
+@import "./blocks/advantages-list__photo.scss";
+@import "./blocks/advantages-list__title.scss";
+@import "./blocks/advantages-list__sub.scss";
+@import "./blocks/text.scss";
+@import "./blocks/text__title.scss";
+@import "./blocks/text__sub.scss";
+@import "./blocks/text__description.scss";
+@import "./blocks/theme-modified.scss";
+@import "./blocks/wonder.scss";
+@import "./blocks/wonder__title.scss";
+@import "./blocks/wonder__description.scss";
+@import "./blocks/wonder__button.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/footer__title.scss";
+@import "./blocks/footer__academy-logo.scss";
+@import "./blocks/footer__socials.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/socials__item.scss";
+@import "./blocks/socials__link.scss";
+@import "./blocks/content__title.scss";
+@import "./blocks/content__title-head.scss";
+@import "./blocks/content-head.scss";
+@import "./blocks/content-head__sub.scss";
+@import "./blocks/card__image.scss";
+@import "./blocks/card__content.scss";
+@import "./blocks/card__likes-img.scss";
+@import "./blocks/card__total-likes.scss";
+@import "./blocks/video__title.scss";
+@import "./blocks/video__description.scss";
+@import "./blocks/video-player.scss";
+@import "./blocks/form__content.scss";
+@import "./blocks/introduce__title.scss";
+@import "./blocks/introduce__description.scss";
+@import "./blocks/introduce__text-area.scss";
+@import "./blocks/form__title.scss";
+@import "./blocks/information__description.scss";
+@import "./blocks/label.scss";
+@import "./blocks/review__textarea.scss";
+@import "./blocks/button.scss";
+@import "./blocks/rewiew__button.scss";
+@import "./blocks/modal-error__title.scss";
+@import "./blocks/modal-error__description.scss";
+@import "./blocks/modal-succsess__title.scss";
+@import "./blocks/modal-succsess__description.scss";
