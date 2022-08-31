@@ -7,4 +7,9 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+  grid-column: 2;
+
+  @media (min-width:$tablet-width) {
+    display: block;
+  }
 }

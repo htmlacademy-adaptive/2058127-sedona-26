@@ -1,0 +1,11 @@
+.intro__img-index {
+  display: block;
+  padding-top: 80px;
+  padding-left: 16px;
+  background-image: url(../img/index-back-mobile.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {}
+
+  @media (min-width: $desktop-width) {}
+}

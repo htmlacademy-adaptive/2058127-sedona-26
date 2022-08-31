@@ -1,6 +1,4 @@
 .footer__title {
-  padding-top: 38px;
-  padding-left: 78px;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -11,4 +9,17 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $mobile-width-only) {
+    padding-top: 38px;
+    padding-left: 78px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px;
+  }
 }

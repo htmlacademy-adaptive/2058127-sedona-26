@@ -10,7 +10,7 @@
 
 <body class="body">
   <header class="header">
-    <a class="header__logo" href="#">
+    <a class="logo" href="#">
       <img class="logo" src="img/logo.svg" width="185" height="96" alt="Логотип.">
     </a>
     <nav class="nav">
@@ -37,16 +37,17 @@
             </a>
           </li>
         </ul>
-        <button class="header__toggle toggle">
-          <img class="toggle__menu" src="/img/icon-menu.svg" alt="Открыть меню." href="/">
-        </button>
+        <div class="header__toggle">
+          <button class="toggle__button toggle" type="button">
+            <img class="toggle__menu" src="img/icon-menu.svg" alt="Открыть меню.">
+          </button>
+        </div>
       </div>
     </nav>
   </header>
   <main class="content">
     <div class="content__intro-index intro--page-inner">
-      <img class="intro__img-form" src="img/intro-form.svg"
-        alt="Welcome yo the gergeous. Sedona. Because the Gtand Canyon sucks!">
+      <img class="intro__img-form" src="img/intro-form.svg" alt="Sedona.">
     </div>
     <div class="content__title">
       <h1 class="content__title-head content-head">Оставьте свой отзыв</h1>
@@ -54,23 +55,25 @@
         достопримечательностях</h2>
     </div>
     <div class="form__content">
-      <div class="content__introduce introduce">
-        <h2 class="introduce__title form__title">Представьтесь:</h2>
-        <p class="introduce__description">Имя*:</p>
-        <input class="introduce__text-area" type="text" value="Пётр">
-        <p class="introduce__description">Фамилия*:</p>
-        <input class="introduce__text-area" type="text" value="Пустота">
-        <p class="introduce__description">Отчество:</p>
-        <input class="introduce__text-area" type="text" value="Викторович">
-      </div>
-      <div class="content__information information">
-        <h2 class="information__title form__title">Контактная информация</h2>
-        <p class="information__description">Контактный телефон*:</p>
-        <input class="information__text" type="tel" value="Введите телефон">
-        <img class="information__input-img" src="/img/phone.svg" alt="Иконка телефона">
-        <p class="information__description">Электронная почта*:</p>
-        <input class="information__text" type="tel" value="Введите e-mail">
-        <img class="information__input-img" src="/img/mail.svg" alt="Иконка почты">
+      <div class="content__user-information">
+        <fieldset class="content__introduce introduce">
+          <h2 class="introduce__title form__title">Представьтесь:</h2>
+          <p class="introduce__description">Имя*:</p>
+          <input class="introduce__text-area" type="text" value="Пётр">
+          <p class="introduce__description">Фамилия*:</p>
+          <input class="introduce__text-area" type="text" value="Пустота">
+          <p class="introduce__description">Отчество:</p>
+          <input class="introduce__text-area" type="text" value="Викторович">
+        </fieldset>
+        <fieldset class="content__information information">
+          <h2 class="information__title form__title">Контактная информация</h2>
+          <p class="information__description">Контактный телефон*:</p>
+          <input class="information__text" type="tel" value="Введите телефон">
+          <img class="information__input-img" src="/img/phone.svg" alt="Иконка телефона">
+          <p class="information__description">Электронная почта*:</p>
+          <input class="information__text" type="tel" value="Введите e-mail">
+          <img class="information__input-img" src="/img/mail.svg" alt="Иконка почты">
+        </fieldset>
       </div>
       <div class="content__rating rating">
         <h2 class="rating__title form__title">Ваше общее впечатление</h2>
@@ -157,7 +160,8 @@
     </div>
     <div class="modal__succsess modal-success">
       <h2 class="modal-succsess__title">Ваш отзыв отправлен!</h2>
-      <h3 class="modal-succsess__description">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы
+      <h3 class="modal-succsess__description">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время
+        мы
         опубликуем его на сайте.</h3>
       <button class="modal-succsess__button button" type="button" value="Закрыть окно.">Закрыть окно</button>
     </div>

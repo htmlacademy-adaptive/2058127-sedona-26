@@ -1,6 +1,17 @@
 .intro {
- background-image: url(../img/index-back-mobile.svg);
- width: 901px;
- height: 389px;
- background-repeat: no-repeat;
+  display: block;
+  width: 320px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.intro::after {
+  background-image: url(//img/intro-triangle.svg);
 }

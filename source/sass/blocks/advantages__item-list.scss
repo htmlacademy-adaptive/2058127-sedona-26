@@ -1,0 +1,13 @@
+.advantages__item-list {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+}

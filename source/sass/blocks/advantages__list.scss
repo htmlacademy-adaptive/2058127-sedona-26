@@ -1,13 +1,22 @@
 .advantages__list {
-  padding-top: 23px;
-  padding-left: 18px;
+  grid-row: 2;
   margin: 0;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
-}
+  display: grid;
+  width: 33.3%;
+  grid-template-columns: 70px 1fr;
+  padding: 23px 16px 0;
 
-.advantages-list {
-  padding-top: 23px;
-  padding-left: 18px;
-  margin: 0;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    display: block;
+    padding: 23px 0 0;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    display: block;
+    padding: 23px 0 0;
+  }
 }

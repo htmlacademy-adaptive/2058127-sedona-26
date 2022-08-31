@@ -1,0 +1,13 @@
+.content__block-card {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    padding-left: 0;
+  }
+}

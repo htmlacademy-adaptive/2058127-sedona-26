@@ -10,7 +10,7 @@
 
 <body class="body">
   <header class="header">
-    <a class="header__logo" href="#">
+    <a class="logo" href="#">
       <img class="logo" src="img/logo.svg" width="185" height="96" alt="Логотип.">
     </a>
     <nav class="nav">
@@ -37,15 +37,17 @@
             </a>
           </li>
         </ul>
-        <button class="header__toggle toggle">
-          <img class="toggle__menu" src="img/icon-menu.svg" alt="Открыть меню." href="#">
-        </button>
+        <div class="header__toggle">
+          <button class="toggle__button toggle" type="button">
+            <img class="toggle__menu" src="img/icon-menu.svg" alt="Открыть меню.">
+          </button>
+        </div>
       </div>
     </nav>
   </header>
   <main class="content">
-    <div class="content__intro-index intro intro--page-inner">
-      <img class="intro__img" src="img/index-intro-background.svg"
+    <div class="intro intro--page-inner">
+      <img class="intro__img" src="img/intro-form.svg"
         alt="Welcome yo the gergeous. Sedona. Because the Gtand Canyon sucks!">
     </div>
     <div class="content__title">
@@ -53,32 +55,32 @@
       <h2 class="content-head__sub">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам
         забыть о политике и экономике.</h2>
     </div>
-    <div class="content__card card">
-      <img class="card__image" src="img/card-1-mobile.svg"
-        alt="Народные просторы. Дорога, уходящая в закат.">
-      <h2 class="card__content">Автор фото: Борис</h2>
-      <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-      <h3 class="card__total-likes">1350</h3>
-    </div>
-    <div class="content__card card">
-      <img class="card__image" src="img/card-2-mobile.svg"
-        alt="Местная растительность. Кактус на фоне каньона.">
-      <h2 class="card__content">Автор фото: Сергей</h2>
-      <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-      <h3 class="card__total-likes">143</h3>
-    </div>
-    <div class="content__card card">
-      <img class="card__image" src="img/card-3-mobile.svg"
-        alt="Дорога на север. Серпантиновая дорога среди горного леса.">
-      <h2 class="card__content">Автор фото: Петр</h2>
-      <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-      <h3 class="card__total-likes">96</h3>
-    </div>
-    <div class="content__card card">
-      <img class="card__image" src="img/card-4-mobile.svg" alt="Мост Дьявола. Фото каньона и простор.">
-      <h2 class="card__content">Автор фото: Антон</h2>
-      <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-      <h3 class="card__total-likes">254</h3>
+    <div class="content__block-card">
+      <div class="content__card content__card__title card">
+        <img class="card__image" src="img/card-1-mobile.svg" alt="Народные просторы. Дорога, уходящая в закат.">
+        <h2 class="card__content">Автор фото: Борис</h2>
+        <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+        <h3 class="card__total-likes">1350</h3>
+      </div>
+      <div class="content__card card">
+        <img class="card__image" src="img/card-2-mobile.svg" alt="Местная растительность. Кактус на фоне каньона.">
+        <h2 class="card__content">Автор фото: Сергей</h2>
+        <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+        <h3 class="card__total-likes">143</h3>
+      </div>
+      <div class="content__card card">
+        <img class="card__image" src="img/card-3-mobile.svg"
+          alt="Дорога на север. Серпантиновая дорога среди горного леса.">
+        <h2 class="card__content">Автор фото: Петр</h2>
+        <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+        <h3 class="card__total-likes">96</h3>
+      </div>
+      <div class="content__card card">
+        <img class="card__image" src="img/card-4-mobile.svg" alt="Мост Дьявола. Фото каньона и простор.">
+        <h2 class="card__content">Автор фото: Антон</h2>
+        <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+        <h3 class="card__total-likes">254</h3>
+      </div>
     </div>
     <div class="content__video video">
       <h2 class="video__title">Все еще сомневаетесь?</h2>
@@ -92,7 +94,7 @@
       <img class="map__marker" src="/img/map-marker.svg" alt="Маркер на карте.">
     </div>
   </main>
-  <footer class="footer theme-light">
+  <footer class="footer theme-light reset-list">
     <span class="footer__title">#visitSEDONA</span>
     <ul class="footer__socials socials">
       <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">VKontakte</span>
@@ -135,8 +137,8 @@
     </ul>
     <a class="footer__academy-logo" href="https://htmlacademy.ru/">Разработано</a>
     <a class="footer__academy-logo-url" href="https://htmlacademy.ru/"><img class="footer__academy-logo"
-        src="img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span
-        class="visually-hidden">Логотип академии</span></a>
+        src="img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span class="visually-hidden">Логотип
+        академии</span></a>
   </footer>
 </body>
 

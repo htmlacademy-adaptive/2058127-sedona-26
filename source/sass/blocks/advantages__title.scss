@@ -1,5 +1,14 @@
 .advantages__title {
   position: relative;
   padding: 0;
+  margin: 0;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }

@@ -1,7 +1,22 @@
 .footer_socials {
   list-style-type: none;
+
+  @media (min-width: $mobile-width-only) {
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+    margin-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px;
+    margin-top: 35px;
+  }
+
 }
 
 .socials {
   display: inline;
+  margin-top: 35px;
 }

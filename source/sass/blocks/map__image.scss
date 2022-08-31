@@ -1,0 +1,7 @@
+.map__image {
+  display: block;
+
+  @media (min-width:$tablet-width) {
+    background-image: url(../img/map-tablet.svg);
+  }
+}
