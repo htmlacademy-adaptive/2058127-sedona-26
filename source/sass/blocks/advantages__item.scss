@@ -1,5 +1,11 @@
 .advantages__item {
-  grid-column: 1;
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .advantages__item::after {

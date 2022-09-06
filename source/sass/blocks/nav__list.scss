@@ -5,16 +5,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 690px;
+    width: 90%;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 1042px;
+    width: 90%;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: $white;
   }
 }

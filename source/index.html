@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="img/favicons/32.svg">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="body">
-  <header class="header">
+  <header class="header  nav__opened">
     <a class="logo" href="#">
       <img class="logo__img" src="img/logo.svg" width="185" height="96" alt="Логотип.">
     </a>
@@ -56,63 +57,75 @@
         <p class="advantages__description main-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
       </div>
-      <ul class="advantages__item-list reset-list">
-        <li class="advantages__item advantages-item theme-dark">
-          <h2 class="advantages-item__title">Настоящий городок</h2>
-          <h3 class="advantages-item__sub">— №1 —</h3>
-          <h4 class="advantages-item__description">Седона не аттракцион дял туристов, там течет своя жизнь</h4>
-        </li>
-        <li class="advantages__city">
-          <img class="advantages__city-img" src="img/city-img.svg" alt="Фото города.">
-        </li>
-        <li class="advantages__list advantages-list theme-light">
-          <img class="advantages-list__photo" src="img/icon-house.svg" alt="Иконка дома.">
-          <h2 class="advantages-list__title">Жильё</h2>
-          <h3 class="advantages-list__sub">Рекомендуем пожить в настоящем мотеле, все как в кино!</h3>
-        </li>
-        <li class="advantages__list advantages-list theme-light">
-          <img class="advantages-list__photo" src="img/icon-burger.svg" alt="Иконка бургера">
-          <h2 class="advantages-list__title">Еда</h2>
-          <h3 class="advantages-list__sub">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</h3>
-        </li>
-        <li class="advantages__list advantages-list theme-light">
-          <img class="advantages-list__photo" src="img/icon-gift.svg" alt="Иконка подарка с бантом.">
-          <h2 class="advantages-list__title">Сувениры</h2>
-          <h3 class="advantages-list__sub">Не только китайского, но и местного производства!</h3>
-        </li>
-        <li class="advantages__item advantages-item theme-dark">
-          <h2 class="advantages-item__title">Там есть мост Дьявола</h2>
-          <h3 class="advantages-item__sub">— №2 —</h3>
-          <h4 class="advantages-item__description">Да, по нему можно пройтись! Если Вы осмелитесь, конечно</h4>
-        </li>
-        <li><img class="advantages-list__bridge" src="img/photo-bridge.svg" alt="Вид на каньон сверху."></li>
-        <li class="text-index text theme-modified">
-          <h2 class="text__title">Небольшая площадь</h2>
-          <h3 class="text__sub">— №3 —</h3>
-          <h4 class="text__description">Все интересные места находятся очень близко</h4>
-        </li>
-        <li class="text-index text theme-modified">
-          <h2 class="text__title">Красивая дорога</h2>
-          <h3 class="text__sub">— №4 —</h3>
-          <h4 class="text__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</h4>
-        </li>
-        <li class="text-index text theme-modified">
-          <h2 class="text__title">Мало туристов</h2>
-          <h3 class="text__sub">— №5 —</h3>
-          <h4 class="text__description">Большинство едет в Гранд Каньон и толпится там</h4>
-        </li>
-        <li class="wonder theme-light">
+      <div class="advantages">
+        <div class="advantages__about-city">
+          <div class="advantages__item__city advantages-item theme-dark">
+            <h2 class="advantages-item__title">Настоящий городок</h2>
+            <h3 class="advantages-item__sub">— №1 —</h3>
+            <h4 class="advantages-item__description">Седона не аттракцион дял туристов, там течет своя жизнь</h4>
+          </div>
+          <div class="advantages__city">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/photo-city-tablet.png">
+            <img class="advantages__city-img" src="img/city-img.svg" alt="Фото города.">
+          </picture>
+          </div>
+        </div>
+        <ul class="advantages__item-list reset-list">
+          <li class="advantages__list advantages-list theme-light">
+            <img class="advantages-list__photo" src="img/icon-house.svg" alt="Иконка дома.">
+            <h2 class="advantages-list__title">Жильё</h2>
+            <h3 class="advantages-list__sub">Рекомендуем пожить в настоящем мотеле, все как в кино!</h3>
+          </li>
+          <li class="advantages__list advantages-list theme-light">
+            <img class="advantages-list__photo" src="img/icon-burger.svg" alt="Иконка бургера">
+            <h2 class="advantages-list__title">Еда</h2>
+            <h3 class="advantages-list__sub">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</h3>
+          </li>
+          <li class="advantages__list advantages-list theme-light">
+            <img class="advantages-list__photo" src="img/icon-gift.svg" alt="Иконка подарка с бантом.">
+            <h2 class="advantages-list__title">Сувениры</h2>
+            <h3 class="advantages-list__sub">Не только китайского, но и местного производства!</h3>
+          </li>
+        </ul>
+        <div class="advantages__about-bridge">
+          <div class="advantages__item advantages-item theme-dark">
+            <h2 class="advantages-item__title">Там есть мост Дьявола</h2>
+            <h3 class="advantages-item__sub">— №2 —</h3>
+            <h4 class="advantages-item__description">Да, по нему можно пройтись! Если Вы осмелитесь, конечно</h4>
+          </div>
+          <div>
+            <img class="advantages-list__bridge" src="img/photo-bridge.svg" alt="Вид на каньон сверху.">
+          </div>
+        </div>
+        <ul class="text-list reset-list">
+          <li class="text-index text theme-modified">
+            <h2 class="text__title">Небольшая площадь</h2>
+            <h3 class="text__sub">— №3 —</h3>
+            <h4 class="text__description">Все интересные места находятся очень близко</h4>
+          </li>
+          <li class="text-index text theme-modified">
+            <h2 class="text__title">Красивая дорога</h2>
+            <h3 class="text__sub">— №4 —</h3>
+            <h4 class="text__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</h4>
+          </li>
+          <li class="text-index text theme-modified">
+            <h2 class="text__title">Мало туристов</h2>
+            <h3 class="text__sub">— №5 —</h3>
+            <h4 class="text__description">Большинство едет в Гранд Каньон и толпится там</h4>
+          </li>
+        </ul>
+        <div class="wonder theme-light">
           <h2 class="wonder__title">Заинтерисовались?</h2>
           <h3 class="wonder__description">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения
             гостиниц в Седоне</h3>
           <button class="wonder__button button" type="button" value="Найти гостиницу.">Найти гостиницу</button>
-        </li>
-      </ul>
-      <div class="map">
-        <img class="map__image" src="img/map-mobile.svg" alt="Карта.">
-        <img class="map__marker" src="img/map-marker.svg" alt="Маркер на карте.">
+        </div>
+        <div class="map">
+          <img class="map__image" src="img/map-mobile.svg" alt="Карта.">
+          <img class="map__marker" src="img/map-marker.svg" alt="Маркер на карте.">
+        </div>
       </div>
-    </div>
 
   </main>
   <footer class="footer theme-light reset-list">

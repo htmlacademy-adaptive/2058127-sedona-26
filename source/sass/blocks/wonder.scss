@@ -4,9 +4,9 @@
   grid-row: 5;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 100%;
   }
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 100%;
   }
 }

@@ -2,6 +2,7 @@
   display: block;
 
   @media (min-width:$tablet-width) {
-    background-image: url(../img/map-tablet.svg);
+    background-image: url(/img/map-tablet.svg);
+    background-repeat: no-repeat;
   }
 }

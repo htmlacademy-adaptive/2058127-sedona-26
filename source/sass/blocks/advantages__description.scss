@@ -1,11 +1,11 @@
 .advantages__description {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: $font-stack;
   font-size: 14px;
   line-height: 21px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
+  color: $black;
   margin: 0;
   padding-top: 35px;
   padding-bottom: 32px;

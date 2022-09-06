@@ -1,11 +1,32 @@
 .intro__img-index {
-  display: block;
-  padding-top: 80px;
-  padding-left: 16px;
-  background-image: url(../img/index-back-mobile.svg);
-  background-repeat: no-repeat;
+  display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 389px;
+    padding-top: 90px;
+    padding-bottom: 57px;
+    background-image: url(../img/index-back-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) {}
+  @media (min-width: $tablet-width) {
+    background-image: url(/img/intro-desktop.svg);
+    height: 518px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-  @media (min-width: $desktop-width) {}
+  @media (min-width: $desktop-width) {
+    background-image: url(/img/intro-desktop.svg);
+    height: 518px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.intro__img-index::after {
+  background-image: url(/img/intro-triangle.svg);
 }

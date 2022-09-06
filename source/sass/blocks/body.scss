@@ -1,16 +1,13 @@
 .body {
   display: grid;
-  width: 320px;
   background: #e7e5e5;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1280px;
     margin: 0 auto;
   }
 }

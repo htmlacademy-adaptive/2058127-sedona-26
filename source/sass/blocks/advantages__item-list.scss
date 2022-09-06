@@ -1,13 +1,15 @@
 .advantages__item-list {
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 256px 256px 256px;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    height: 330px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    height: 330px;
   }
 }

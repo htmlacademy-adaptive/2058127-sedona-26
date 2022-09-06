@@ -1,9 +1,7 @@
 .advantages__list {
-  grid-row: 2;
   margin: 0;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: $font-stack;
   display: grid;
-  width: 33.3%;
   grid-template-columns: 70px 1fr;
   padding: 23px 16px 0;
 
