@@ -1,0 +1,43 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+$font-stack: "PT Sans", Arial, Helvetica, sans-serif;
+$white: #ffffff;
+$black: #000000;
+$grey: #333333;
+$brown: #766357;
+$blue: #81B3D2;
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin mobile-width-only {
+  @media screen and (max-width: $mobile-width-only) {
+    @content;
+  }
+}
+
+@mixin white {
+  color: #ffffff;
+}
+
+@mixin black {
+  color: #000000;
+}
+
+@mixin grey {
+  color: #333333;
+}
+
+@mixin brown {
+  color: #766357;
+}
