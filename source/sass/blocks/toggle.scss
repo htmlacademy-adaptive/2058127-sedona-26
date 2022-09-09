@@ -1,5 +1,13 @@
 .toggle {
   position: relative;
   border: none;
-  background-color: #ffffff;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: none
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none
+  }
 }

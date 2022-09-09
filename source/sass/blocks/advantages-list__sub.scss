@@ -1,10 +1,15 @@
 .advantages-list__sub {
   margin-bottom: 0;
-  font-family: 'PT Sans';
+  font-family: $font-stack;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: $grey;
+  grid-column: 2;
+
+  @media (min-width:$tablet-width) {
+    display: block;
+  }
 }

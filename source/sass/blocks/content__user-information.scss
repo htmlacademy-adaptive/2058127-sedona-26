@@ -1,0 +1,10 @@
+.content__user-information {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
