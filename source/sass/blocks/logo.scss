@@ -1,16 +1,16 @@
 .logo {
   position: absolute;
-  margin: 0 38%;
+  margin: 0 67px;
   width: 185px;
   height: 96px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    margin: 0 43%;
+    margin: 0 291px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    margin: 0 43%;
+    margin: 0 507px;
   }
 }

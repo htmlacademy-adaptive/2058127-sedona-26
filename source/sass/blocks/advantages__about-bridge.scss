@@ -1,6 +1,9 @@
 .advantages__about-bridge {
+  padding-top: 52px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
+    padding-top: 108px;
   }
 }

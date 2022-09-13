@@ -1,11 +1,25 @@
 .advantages__head {
   margin: 0px;
-  padding-top: 10px;
+  padding-top: 32px;
+  padding-left: 22px;
   font-family: $font-stack;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 27px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: $black;
+  width: 293px;
+
+  @media (min-width:$tablet-width) {
+    margin-top: 16px;
+    margin-left: 122px;
+    font-family: $font-stack;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 500px;
+  }
 }

@@ -1,11 +1,10 @@
 .nav__list {
-  display: none;
 
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 690px;
     margin: 0 auto;
     background-color: $white;
   }
@@ -13,7 +12,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 1040px;
     margin: 0 auto;
     background-color: $white;
   }

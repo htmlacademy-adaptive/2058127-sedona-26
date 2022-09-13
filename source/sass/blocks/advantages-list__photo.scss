@@ -1,4 +1,39 @@
-.advantages-list__photo {
+.advantages-list__photo__house {
   padding-top: 25px;
   padding-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0px;
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 89px;
+    width: 76px;
+  }
+}
+
+.advantages-list__photo__burger {
+  padding-top: 24px;
+  padding-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0px;
+    text-align: center;
+    margin-top: 16px;
+    margin-left: 89px;
+    width: 77px;
+  }
+}
+
+.advantages-list__photo__gifts {
+  padding-top: 22px;
+  padding-left: 22px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0px;
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 95px;
+    width: 64px;
+  }
 }

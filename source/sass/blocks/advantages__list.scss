@@ -1,9 +1,6 @@
 .advantages__list {
-  margin: 0;
   font-family: $font-stack;
   display: grid;
-  grid-template-columns: 70px 1fr;
-  padding: 23px 16px 0;
 
   @media (min-width: $tablet-width) {
     width: 256px;
@@ -17,4 +14,14 @@
     display: block;
     padding: 23px 0 0;
   }
+}
+
+.advantages-list__photo__burger {
+  padding-top: 6px;
+  padding-left: 18px;
+}
+
+.advantages-list__photo__gifts {
+  padding-top: 6px;
+  padding-left: 18px;
 }

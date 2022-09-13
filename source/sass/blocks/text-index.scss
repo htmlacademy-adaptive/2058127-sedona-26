@@ -1,6 +1,12 @@
 .text-index {
   width: 100%;
 
+  @media (max-width: $mobile-width-only) {
+    border-bottom-width: 1px;
+    border-bottom-color: #D6D6D6;
+    border-bottom-style: solid;
+  }
+
   @media (min-width: $tablet-width) {
     width: 33.3%;
     height: 330px;

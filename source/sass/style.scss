@@ -1,13 +1,17 @@
 @import "./blocks/mixins/mixins.scss";
 @import "./blocks/fonts.scss";
 @import "./blocks/setup/setup.scss";
+@import "./blocks/nav__nojs.scss";
 @import "./blocks/theme-light.scss";
 @import "./blocks/theme-dark.scss";
 @import "./blocks/body.scss";
 @import "./blocks/header.scss";
 @import "./blocks/header__toggle.scss";
 @import "./blocks/nav.scss";
-@import "./blocks/nav__opened.scss";
+@import "./blocks/nav__wrapper.scss";
+@import "./blocks/nav__button.scss";
+@import "./blocks/nav-menu__opened.scss";
+@import "./blocks/nav-menu__closed.scss";
 @import "./blocks/modal.scss";
 @import "./blocks/visually-hiden.scss";
 @import "./blocks/logo__img.scss";
@@ -16,7 +20,7 @@
 @import "./blocks/site-list__item.scss";
 @import "./blocks/site-list__item__active.scss";
 @import "./blocks/site-list__link.scss";
-@import "./blocks/toggle.scss";
+@import "./blocks/site-list__link--active.scss";
 @import "./blocks/content.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/intro__img.scss";
@@ -47,7 +51,6 @@
 @import "./blocks/wonder__description.scss";
 @import "./blocks/wonder__button.scss";
 @import "./blocks/map.scss";
-@import "./blocks/map__image.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/footer__title.scss";
 @import "./blocks/footer__academy-logo.scss";

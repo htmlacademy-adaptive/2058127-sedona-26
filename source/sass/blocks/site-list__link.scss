@@ -1,13 +1,5 @@
 .site-list__link {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0px;
-  text-align: center;
-  list-style-type: none;
   text-decoration: none;
-  color: $white;
 
   @media (min-width:$tablet-width) {
     color: $black;
@@ -16,4 +8,16 @@
   @media (min-width:$tablet-width) {
     color: $black;
   }
+}
+
+.site-list__link:hover {
+  color: $blue;
+}
+
+.site-list__link:focus {
+  color: $black;
+}
+
+.site-list__link:active {
+  color: $text-active;
 }

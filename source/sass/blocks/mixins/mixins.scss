@@ -7,6 +7,7 @@ $black: #000000;
 $grey: #333333;
 $brown: #766357;
 $blue: #81B3D2;
+$text-active: #B3B3B3;
 
 
 @mixin tablet {
@@ -27,6 +28,10 @@ $blue: #81B3D2;
   }
 }
 
+@mixin font-stack {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
 @mixin white {
   color: #ffffff;
 }
@@ -41,4 +46,12 @@ $blue: #81B3D2;
 
 @mixin brown {
   color: #766357;
+}
+
+@mixin brown {
+  color: #81B3D2;
+}
+
+@mixin text-active {
+  color: #B3B3B3;
 }

@@ -10,42 +10,39 @@
 </head>
 
 <body class="body">
-  <header class="header  nav__opened">
+  <header class="header">
     <a class="logo" href="#">
       <img class="logo__img" src="img/logo.svg" width="185" height="96" alt="Логотип.">
     </a>
-    <nav class="nav">
-      <div class="nav__wrapper">
-        <ul class="nav__list site-list">
-          <li class="site-list__item site-list__item__active">
-            <a class="site-list__link" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              HTML ACADEMY
-            </a>
-          </li>
-        </ul>
-        <div class="header__toggle">
-          <button class="toggle__button toggle" type="button">
-            <img class="toggle__menu" src="img/icon-menu.svg" alt="Открыть меню.">
-          </button>
-        </div>
-      </div>
+    <nav class="nav nav-menu__closed nav__nojs">
+      <button class="nav__button reset-list" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
+  <script src="../source/js/script.js"></script>
   <main class="content">
     <div class="content__intro-index intro">
       <img class="intro__img-index " src="img/index-intro-background.svg"
@@ -66,33 +63,37 @@
           </div>
           <div class="advantages__city">
             <picture>
-              <source media="(min-width: 768px)" srcset="/img/photo-city-tablet.png">
-            <img class="advantages__city-img" src="img/city-img.svg" alt="Фото города.">
-          </picture>
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet.png">
+              <img class="advantages__city-img" src="img/city-img.svg" alt="Фото города.">
+            </picture>
           </div>
         </div>
         <ul class="advantages__item-list reset-list">
           <li class="advantages__list advantages-list theme-light">
-            <img class="advantages-list__photo" src="img/icon-house.svg" alt="Иконка дома.">
-            <h2 class="advantages-list__title">Жильё</h2>
-            <h3 class="advantages-list__sub">Рекомендуем пожить в настоящем мотеле, все как в кино!</h3>
+            <img class="advantages-list__photo__house" src="img/icon-house.svg" alt="Иконка дома.">
+            <h2 class="advantages-list__title advantages-list__title__house">Жильё</h2>
+            <h3 class="advantages-list__sub advantages-list__sub__house">Рекомендуем пожить в настоящем мотеле, все как
+              в кино!</h3>
           </li>
           <li class="advantages__list advantages-list theme-light">
-            <img class="advantages-list__photo" src="img/icon-burger.svg" alt="Иконка бургера">
-            <h2 class="advantages-list__title">Еда</h2>
-            <h3 class="advantages-list__sub">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</h3>
+            <img class="advantages-list__photo__burger" src="img/icon-burger.svg" alt="Иконка бургера">
+            <h2 class="advantages-list__title advantages-list__title__burger">Еда</h2>
+            <h3 class="advantages-list__sub advantages-list__sub__burger">Всегда заказывайте фирменный бургер, Вы не
+              разочаруетесь!</h3>
           </li>
           <li class="advantages__list advantages-list theme-light">
-            <img class="advantages-list__photo" src="img/icon-gift.svg" alt="Иконка подарка с бантом.">
-            <h2 class="advantages-list__title">Сувениры</h2>
-            <h3 class="advantages-list__sub">Не только китайского, но и местного производства!</h3>
+            <img class="advantages-list__photo__gifts" src="img/icon-gift.svg" alt="Иконка подарка с бантом.">
+            <h2 class="advantages-list__title advantages-list__title__gifts">Сувениры</h2>
+            <h3 class="advantages-list__sub advantages-list__sub__gifts">Не только китайского, но и местного
+              производства!</h3>
           </li>
         </ul>
         <div class="advantages__about-bridge">
-          <div class="advantages__item advantages-item theme-dark">
-            <h2 class="advantages-item__title">Там есть мост Дьявола</h2>
-            <h3 class="advantages-item__sub">— №2 —</h3>
-            <h4 class="advantages-item__description">Да, по нему можно пройтись! Если Вы осмелитесь, конечно</h4>
+          <div class="advantages__item advantages__item__bridge advantages-item theme-dark">
+            <h2 class="advantages-item__title advantages-item__title__bridge">Там есть мост Дьявола</h2>
+            <h3 class="advantages-item__sub advantages-item__sub__bridge">— №2 —</h3>
+            <h4 class="advantages-item__description advantages-item__description__bridge">Да, по нему можно пройтись!
+              Если Вы осмелитесь, конечно</h4>
           </div>
           <div>
             <img class="advantages-list__bridge" src="img/photo-bridge.svg" alt="Вид на каньон сверху.">
@@ -121,10 +122,10 @@
             гостиниц в Седоне</h3>
           <button class="wonder__button button" type="button" value="Найти гостиницу.">Найти гостиницу</button>
         </div>
-        <div class="map">
-          <img class="map__image" src="img/map-mobile.svg" alt="Карта.">
-          <img class="map__marker" src="img/map-marker.svg" alt="Маркер на карте.">
-        </div>
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1791.8336718243138!2d30.31675229675015!3d59.96871319069475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1662630085277!5m2!1sru!2sru"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
       </div>
 
   </main>
@@ -173,8 +174,7 @@
       <a class="footer__academy-logo" href="https://htmlacademy.ru/">Разработано</a>
       <a class="footer__academy-logo-url" href="https://htmlacademy.ru/"><img class="footer__academy-logo"
           src="img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span class="visually-hidden">Логотип
-          академии.</span>
-      </a>
+          академии.</span></a>
     </div>
   </footer>
 

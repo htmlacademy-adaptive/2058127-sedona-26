@@ -7,23 +7,3 @@
     width: 400px;
   }
 }
-
-.advantages__item::after {
-  background-image: url(../../img/triangle-content.svg);
-  content: "";
-  width: 321px;
-  height: 37px;
-  top: 618px;
-  position: absolute;
-  bottom: auto;
-  left: 50%;
-  transform: translate(-50%, 50%);
-
-  @include tablet {
-    display: none;
-  }
-
-  @include desktop {
-    display: none;
-  }
-}

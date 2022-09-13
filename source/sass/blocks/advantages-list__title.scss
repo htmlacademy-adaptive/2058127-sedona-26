@@ -1,5 +1,36 @@
 .advantages-list__title {
-  padding-top: 31px;
-  padding-bottom: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.advantages-list__title__house {
+  padding-top: 32px;
+  padding-left: 8px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 21px;
+    padding-left: 95px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
+
+.advantages-list__title__burger {
+  padding-top: 30px;
+  padding-left: 12px;
+  margin: 0;
+}
+
+.advantages-list__title__gifts {
+  padding-top: 30px;
+  padding-left: 8px;
   margin: 0;
 }

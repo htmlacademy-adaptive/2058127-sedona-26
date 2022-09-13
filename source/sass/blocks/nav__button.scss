@@ -1,0 +1,73 @@
+.nav__button {
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 67px;
+  height: 51px;
+  background-color: $white;
+  cursor: pointer;
+  border: none;
+}
+
+.nav__button::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 24px;
+  width: 22px;
+  height: 4px;
+  background-color: #81B3D2;
+  box-shadow: 0 9px 0 0 #81b3d2, 0 18.5px 0 0 #81b3d2;
+}
+
+
+
+.nav__button:hover {
+  background-color: fade($blue, 50%);
+}
+
+.nav__button:active {
+  background-color: fade($blue, 30%);
+}
+
+.nav-menu__opened .nav__button {
+  z-index: 10;
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 4px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade($white, 30%);
+  }
+}

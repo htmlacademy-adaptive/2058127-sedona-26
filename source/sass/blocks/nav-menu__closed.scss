@@ -1,0 +1,19 @@
+.nav-menu__closed {
+
+  @media (max-width: $mobile-width-only) {
+    .site-list {
+      display: none;
+    }
+
+    .site-list__link {
+      color: $white;
+    }
+
+    .nav-menu__closed .nav__button:active::before {
+      background-color: fade($blue, 30%);
+      box-shadow:
+        0 8px 0 0 fade($blue, 30%),
+        0 16px 0 0 fade($blue, 30%);
+    }
+  }
+}
