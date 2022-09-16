@@ -2,4 +2,9 @@
   list-style-type: none;
   margin-top: 34px;
   margin-left: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 36px;
+    margin-left: -38px;
+  }
 }

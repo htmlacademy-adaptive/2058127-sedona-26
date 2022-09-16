@@ -9,6 +9,10 @@
     margin-left: 89px;
     width: 76px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 160px;
+  }
 }
 
 .advantages-list__photo__burger {
@@ -21,6 +25,10 @@
     margin-top: 16px;
     margin-left: 89px;
     width: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 161px;
   }
 }
 
@@ -35,5 +43,10 @@
     margin-top: 12px;
     margin-left: 95px;
     width: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 167px;
+    margin-top: 10px;
   }
 }

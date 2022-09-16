@@ -19,4 +19,11 @@
   text-transform: uppercase;
   color: $white;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    margin-top: 42px;
+    margin-left: 156px;
+    margin-bottom: 58px;
+  }
 }

@@ -1,13 +1,26 @@
 .text__title {
   margin: 0;
-  padding-top: 26px;
+  padding-top: 25.5px;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: 700;
-  font-size: 21px;
   line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 42px;
+    padding-left: 66px;
+    width: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 42px;
+    padding-left: 141px;
+    width: 258px;
+  }
 }

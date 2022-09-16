@@ -1,6 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
+  background-color: $white;
 
   @media (min-width:$tablet-width) {
     display: flex;
@@ -9,6 +10,7 @@
     justify-content: space-between;
   }
   @media (min-width:$desktop-width) {
+    background: $white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -1,6 +1,6 @@
 .advantages__item {
   @media (min-width: $tablet-width) {
-    width: 256px;
+    max-height: 256px;
   }
 
   @media (min-width: $desktop-width) {

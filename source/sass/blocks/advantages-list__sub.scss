@@ -18,14 +18,52 @@
   margin-left: 8px;
   margin-top: 12px;
   padding-right: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 31px;
+    margin-top: 24px;
+    padding-right: 18px;
+    text-align: center;
+    width: 212px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 327px;
+    margin-left: 45px;
+  }
 }
 
 .advantages-list__sub__burger {
   margin-top: 13px;
   margin-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+    margin-top: 25px;
+    margin-left: 52px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    margin-top: 24px;
+  }
 }
 
 .advantages-list__sub__gifts {
   margin-top: 11px;
   margin-left: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    margin-left: 33px;
+    width: 192px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
+    margin-left: 68px;
+    width: 265px;
+  }
 }

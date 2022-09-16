@@ -1,4 +1,7 @@
 .content {
   width: 100%;
   background: #ffffff;
+
+  @media (min-width: $desktop-width) {
+  }
 }

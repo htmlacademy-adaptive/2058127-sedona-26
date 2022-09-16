@@ -1,5 +1,10 @@
 .footer__academy {
-  margin-top: 0;
-  text-align: center;
+  width: 100px;
+  padding-top: 30px;
+  padding-left: 96px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+    padding-right: 68px;
+  }
 }
