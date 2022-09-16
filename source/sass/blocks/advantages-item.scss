@@ -8,24 +8,3 @@
   }
 }
 
-.advantages-item::after {
-  background-image: url(../img/triangle-content.svg);
-  background-repeat: no-repeat;
-  margin-left: 160px;
-  content: "";
-  width: 100%;
-  z-index: 10;
-  height: 37px;
-  top: 632px;
-  position: absolute;
-  bottom: auto;
-  transform: translate(-50%, 50%);
-
-  @include tablet {
-    display: none;
-  }
-
-  @include desktop {
-    display: none;
-  }
-}

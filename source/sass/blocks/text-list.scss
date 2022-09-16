@@ -4,7 +4,5 @@
     display: flex;
   }
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
+  @media (min-width: $desktop-width) {}
 }

@@ -1,12 +1,13 @@
 .card__image {
   display: block;
+  width: 100%;
+  max-height: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    max-height: 267px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
-    height: 267px;
+    max-height: 267px;
   }
 }

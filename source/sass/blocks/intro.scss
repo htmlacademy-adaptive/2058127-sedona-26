@@ -1,21 +1,37 @@
 .intro::after {
   content: "";
   position: absolute;
-  top: 388px;
+  bottom: 0;
   background-image: url(/img/intro-triangle.svg);
   background-repeat: no-repeat;
   width: 100%;
   height: 57px;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {}
+
+  @media (min-width: $desktop-width) {}
+}
+
+.intro__sedona {
+  position: relative;
+  background-image: url(/img/intro__sedona__desktop.svg);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  min-height: 214px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 518px;
-    width: 768px;
+    min-width: 518px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 518px;
-    width: 1200px;
-  }
+.intro__sedona::after {
+  content: "";
+  position: absolute;
+  background-image: url(/img/intro-triangle.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 57px;
+  background-position: center;
 }

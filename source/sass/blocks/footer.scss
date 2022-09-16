@@ -1,19 +1,17 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: $white;
+  gap: 20px;
+  background: $white;
+  padding: 40px 79px;
 
   @media (min-width:$tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 36px 60px;
   }
   @media (min-width:$desktop-width) {
-    background: $white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }

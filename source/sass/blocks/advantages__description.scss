@@ -1,5 +1,5 @@
 .advantages__description {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: $font-stack;
   font-size: 14px;
   line-height: 21px;
   align-items: center;
@@ -7,19 +7,10 @@
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding-top: 34px;
-  padding-left: 16px;
-  padding-bottom: 32px;
-  width: 302px;
 
   @media (min-width:$tablet-width) {
-    margin: 0;
-    padding-top: 29px;
-    width: 752px;
+
   }
   @media (min-width:$tablet-width) {
-    margin: 0 auto;
-    margin-left: 215px;
-    padding-bottom: 22px;
   }
 }

@@ -1,3 +1,7 @@
 .video-player {
-  margin-left: 20px;
+  max-width: 177px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 500px;
+  }
 }

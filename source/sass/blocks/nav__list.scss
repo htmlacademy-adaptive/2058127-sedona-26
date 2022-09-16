@@ -1,20 +1,16 @@
 .nav__list {
-
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 21px;
-    width: 710px;
-    margin: 0 auto;
-    background-color: $white;
+    padding-left: 51px;
+    padding-right: 29px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 1058px;
-    margin: 0 auto;
-    background-color: $white;
+    padding-left: 92px;
+    padding-right: 72px;
   }
 }

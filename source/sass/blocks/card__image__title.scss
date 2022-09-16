@@ -1,9 +1,13 @@
 .card__image__title {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+
   @media (min-width: $tablet-width) {
-    width: 648px;
+    max-height: 400px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    max-height: 400px;
   }
 }

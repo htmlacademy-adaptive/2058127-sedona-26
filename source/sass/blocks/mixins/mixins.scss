@@ -5,6 +5,7 @@ $font-stack: "PT Sans", Arial, Helvetica, sans-serif;
 $white: #ffffff;
 $black: #000000;
 $grey: #333333;
+$light-gray: #f2f2f2;
 $brown: #766357;
 $blue: #81B3D2;
 $text-active: #B3B3B3;
@@ -42,6 +43,10 @@ $text-active: #B3B3B3;
 
 @mixin grey {
   color: #333333;
+}
+
+@mixin light-grey {
+  color: #f2f2f2;
 }
 
 @mixin brown {

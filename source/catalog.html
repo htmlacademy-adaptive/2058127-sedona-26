@@ -6,49 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="icon" href="img/favicons/32.svg">
+  <script src="../source/js/script.js"></script>
   <title>HTML Academy: Седона</title>
 </head>
 
-<body class="body">
-  <div class="container">
-    <header class="header">
-      <a class="logo" href="index.html">
-        <img class="logo__img" src="img/logo.svg" width="185" height="96" alt="Логотип.">
-      </a>
-      <nav class="nav nav-menu__closed nav__nojs">
-        <button class="nav__button reset-list" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              HTML ACADEMY
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <script src="../source/js/script.js"></script>
+<body class="body container">
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img class="logo__img" src="img/logo.svg" width="185" height="96" alt="Логотип.">
+    </a>
+    <nav class="nav nav-menu__closed nav__nojs">
+      <button class="nav__button reset-list" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="content">
-    <div class="intro intro--page-inner">
-      <img class="intro__img" src="img/intro-sedona.svg"
-        alt="Welcome yo the gergeous. Sedona. Because the Gtand Canyon sucks!">
+    <div class="intro intro__sedona intro--page-inner">
+      <img class="intro__img intro__img__sedona" src="img/intro-sedona.svg" alt="Sedona.">
     </div>
     <div class="content__title">
       <h1 class="content__title-head content-head">Фото и видео</h1>
@@ -58,27 +57,31 @@
     <div class="content__block-card">
       <div class="content__card card">
         <img class="card__image__title" src="img/card-1-mobile.svg" alt="Народные просторы. Дорога, уходящая в закат.">
-        <h2 class="card__content">Автор фото: Борис</h2>
+        <h2 class=card__content-title>Неродные просторы</h2>
+        <p class="card__content">Автор фото: Борис</p>
         <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
         <h3 class="card__total-likes">1350</h3>
       </div>
       <div class="content__card-list">
         <div class="content__card card">
           <img class="card__image" src="img/card-2-mobile.svg" alt="Местная растительность. Кактус на фоне каньона.">
-          <h2 class="card__content">Автор фото: Сергей</h2>
+          <h2 class=card__content-title>Местная растительность</h2>
+          <p class="card__content">Автор фото: Сергей</p>
           <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
           <h3 class="card__total-likes">143</h3>
         </div>
         <div class="content__card card">
           <img class="card__image" src="img/card-3-mobile.svg"
             alt="Дорога на север. Серпантиновая дорога среди горного леса.">
-          <h2 class="card__content">Автор фото: Петр</h2>
+          <h2 class=card__content-title>Дорога на север</h2>
+          <p class="card__content">Автор фото: Петр</p>
           <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
           <h3 class="card__total-likes">96</h3>
         </div>
         <div class="content__card card">
           <img class="card__image" src="img/card-4-mobile.svg" alt="Мост Дьявола. Фото каньона и простор.">
-          <h2 class="card__content">Автор фото: Антон</h2>
+          <h2 class=card__content-title>Мост Дьявола</h2>
+          <p class="card__content">Автор фото: Антон</p>
           <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
           <h3 class="card__total-likes">254</h3>
         </div>
@@ -134,11 +137,9 @@
         </a>
       </li>
     </ul>
-    <div class="footer__academy">
-      <a class="footer__academy-logo" href="https://htmlacademy.ru/">Разработано</a>
-      <a class="footer__academy-logo-url" href="https://htmlacademy.ru/"><img class="footer__academy-logo"
-          src="img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span
-          class="visually-hidden">Логотип
+    <div class="footer__logo">
+      <a class="footer__academy-logo" href="https://htmlacademy.ru/">Разработано<img class="footer__academy-logo-img"
+          src="img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span class="visually-hidden">Логотип
           академии.</span></a>
     </div>
   </footer>

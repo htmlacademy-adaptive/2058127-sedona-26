@@ -1,15 +1,8 @@
 .content__block-card {
-  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 768px;
-    margin-left: 60px;
-  }
+  @media (min-width: $tablet-width) {}
 
-  @media (min-width: $desktop-width) {
-    display: block;
-    width: 1200px;
-    margin-left: 0;
-  }
 }
