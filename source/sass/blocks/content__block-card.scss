@@ -1,0 +1,9 @@
+.content__block-card {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {}
+
+}

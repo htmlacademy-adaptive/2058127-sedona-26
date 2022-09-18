@@ -1,13 +1,14 @@
 .text__title {
   margin: 0;
-  padding-top: 26px;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  padding: 0;
+  padding-top: 33px;
+  font-family: $font-stack;
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }

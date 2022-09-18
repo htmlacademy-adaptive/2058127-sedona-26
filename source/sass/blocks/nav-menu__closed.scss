@@ -1,0 +1,22 @@
+.nav-menu__closed {
+  .site-list {
+    display: none;
+  }
+
+  .site-list__link {
+    color: currentColor;
+  }
+
+  .nav__button:active::before {
+    background-color: fade($blue, 30%);
+    box-shadow:
+      0 8px 0 0 fade($blue, 30%),
+      0 16px 0 0 fade($blue, 30%);
+  }
+
+  @include tablet {
+    .site-list {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.advantages__about-bridge {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

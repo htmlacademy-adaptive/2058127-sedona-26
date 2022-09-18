@@ -5,48 +5,49 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="img/favicons/32.svg">
+  <script src="../source/js/script.js"></script>
   <title>HTML Academy: Седона</title>
 </head>
 
-<body class="body">
+<body class="body container">
+
   <header class="header">
-    <a class="header__logo" href="#">
-      <img class="logo" src="img/logo.svg" width="185" height="96" alt="Логотип.">
+    <a class="logo" href="index.html">
+      <img class="logo__img" src="img/logo.svg" width="185" height="96" alt="Логотип.">
     </a>
-    <nav class="nav">
-      <div class="nav__wrapper">
-        <ul class="nav__list site-list">
-          <li class="site-list__item site-list__item__active">
-            <a class="site-list__link" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              HTML ACADEMY
-            </a>
-          </li>
-        </ul>
-        <button class="header__toggle toggle">
-          <img class="toggle__menu" src="/img/icon-menu.svg" alt="Открыть меню." href="/">
-        </button>
-      </div>
+    <nav class="nav nav-menu__closed nav__nojs">
+      <button class="nav__button reset-list" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
+
   <main class="content">
-    <div class="content__intro-index intro--page-inner">
-      <img class="intro__img-form" src="img/intro-form.svg"
-        alt="Welcome yo the gergeous. Sedona. Because the Gtand Canyon sucks!">
+    <div class="intro intro__sedona intro--page-inner">
+      <img class="intro__img intro__img--sedona" src="img/intro-sedona.svg" alt="Sedona.">
     </div>
     <div class="content__title">
       <h1 class="content__title-head content-head">Оставьте свой отзыв</h1>
@@ -54,55 +55,61 @@
         достопримечательностях</h2>
     </div>
     <div class="form__content">
-      <div class="content__introduce introduce">
-        <h2 class="introduce__title form__title">Представьтесь:</h2>
-        <p class="introduce__description">Имя*:</p>
-        <input class="introduce__text-area" type="text" value="Пётр">
-        <p class="introduce__description">Фамилия*:</p>
-        <input class="introduce__text-area" type="text" value="Пустота">
-        <p class="introduce__description">Отчество:</p>
-        <input class="introduce__text-area" type="text" value="Викторович">
-      </div>
-      <div class="content__information information">
-        <h2 class="information__title form__title">Контактная информация</h2>
-        <p class="information__description">Контактный телефон*:</p>
-        <input class="information__text" type="tel" value="Введите телефон">
-        <img class="information__input-img" src="/img/phone.svg" alt="Иконка телефона">
-        <p class="information__description">Электронная почта*:</p>
-        <input class="information__text" type="tel" value="Введите e-mail">
-        <img class="information__input-img" src="/img/mail.svg" alt="Иконка почты">
+      <div class="content__user-information">
+        <fieldset class="content__introduce introduce">
+          <h2 class="introduce__title form__title">Представьтесь:</h2>
+          <p class="introduce__description">Имя*:</p>
+          <input class="introduce__text-area" type="text" value="Пётр">
+          <p class="introduce__description">Фамилия*:</p>
+          <input class="introduce__text-area" type="text" value="Пустота">
+          <p class="introduce__description">Отчество:</p>
+          <input class="introduce__text-area" type="text" value="Викторович">
+        </fieldset>
+        <fieldset class="content__information information">
+          <h2 class="information__title form__title">Контактная информация</h2>
+          <p class="information__description">Контактный телефон*:</p>
+          <input class="information__text" type="tel" value="Введите телефон">
+          <img class="information__input-img" src="/img/phone.svg" alt="Иконка телефона">
+          <p class="information__description">Электронная почта*:</p>
+          <input class="information__text" type="tel" value="Введите e-mail">
+          <img class="information__input-img" src="/img/mail.svg" alt="Иконка почты">
+        </fieldset>
       </div>
       <div class="content__rating rating">
         <h2 class="rating__title form__title">Ваше общее впечатление</h2>
-        <input class="rating__radio" type="radio" id="rating__radio-positive" value="Скорее положительное"
-          checked><label for="rating__radio-positive">Скорее положительное</label>
-        <input class="rating__radio" type="radio" id="rating__radio-negative" value="Скорее отрицательное"><label
-          for="rating__radio-negative">Скорее отрицательное</label>
-        <input class="rating__radio" type="radio" id="rating__radio-none" value="Затрудняюсь ответить"><label
-          for="rating__radio-none">Затрудняюсь ответить</label>
+        <div class="rating__radio-box">
+          <label for="rating__radio-positive"><input class="rating__radio" type="radio" id="rating__radio-positive"
+              value="Скорее положительное" checked>Скорее положительное</label>
+          <label for="rating__radio-negative"><input class="rating__radio" type="radio" id="rating__radio-negative"
+              value="Скорее отрицательное">Скорее отрицательное</label>
+          <label for="rating__radio-none"><input class="rating__radio" type="radio" id="rating__radio-none"
+              value="Затрудняюсь ответить">Затрудняюсь ответить</label>
+        </div>
       </div>
       <div class="content__attraction attraction">
         <h2 class="attraction__title form__title">Посещенные достопримечательности:</h2>
         <div class="attraction__check"><span class="visually-hidden">Выбор посещенных
             достопримечательностей.</span>
-          <input class="attraction__checkbox" type="checkbox" id="devil-bridge" value="Мост Дьявола" checked><label
-            for="devil-bridge">Мост Дьявола</label>
-          <input class="attraction__checkbox" type="checkbox" id="mount-bell" value="Гора-Колокол" checked><label
-            for="mount-bell">Гора-Колокол</label>
-          <input class="attraction__checkbox" type="checkbox" id="slide-park" value="Слайд-парк" checked><label
-            for="slide-park">Слайд парк</label>
-          <input class="attraction__checkbox" type="checkbox" id="red-rocks" value="Красные скалы"><label
-            for="red-rocks">Красные скалы</label>
+          <label for="devil-bridge"><input class="attraction__checkbox" type="checkbox" id="devil-bridge"
+              value="Мост Дьявола" checked>Мост Дьявола</label>
+          <label for="mount-bell"><input class="attraction__checkbox" type="checkbox" id="mount-bell"
+              value="Гора-Колокол" checked>Гора-Колокол</label>
+          <label for="slide-park"><input class="attraction__checkbox" type="checkbox" id="slide-park" value="Слайд-парк"
+              checked>Слайд парк</label>
+          <label for="red-rocks"><input class="attraction__checkbox" type="checkbox" id="red-rocks"
+              value="Красные скалы">Красные скалы</label>
         </div>
       </div>
       <div class="content__review review">
         <h2 class="review__title form__title">Опишите свои эмоции:</h2>
         <textarea class="review__textarea">Опишите подробно все свои восторги</textarea>
         <button class="review__button" type="button" value="Отправить отзыв">Отправить отзыв</button>
+        <p class="review__text">* — обязательные поля</p>
       </div>
     </div>
 
   </main>
+
   <footer class="footer theme-light">
     <span class="footer__title">#visitSEDONA</span>
     <ul class="footer__socials socials">
@@ -144,24 +151,27 @@
         </a>
       </li>
     </ul>
-    <a class="footer__academy-logo" href="https://htmlacademy.ru/">Разработано</a>
-    <a class="footer__academy-logo-url" href="https://htmlacademy.ru/"><img class="footer__academy-logo"
-        src="/img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span class="visually-hidden">Логотип
-        академии</span></a>
+    <div class="footer__logo">
+      <a class="footer__academy-logo" href="https://htmlacademy.ru/">Разработано<img class="footer__academy-logo-img"
+          src="img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span class="visually-hidden">Логотип
+          академии.</span></a>
+    </div>
   </footer>
+
   <div class="modal">
     <div class="modal__error modal-error">
       <h2 class="modal-error__title">Что-то пошло не так!</h2>
-      <h3 class="modal-error__description">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</h3>
+      <h3 class="modal-error__description">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить
+      </h3>
       <button class="modal-error__button button" type="button" value="Ок.">Ок</button>
     </div>
     <div class="modal__succsess modal-success">
       <h2 class="modal-succsess__title">Ваш отзыв отправлен!</h2>
-      <h3 class="modal-succsess__description">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы
+      <h3 class="modal-succsess__description">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время
+        мы
         опубликуем его на сайте.</h3>
       <button class="modal-succsess__button button" type="button" value="Закрыть окно.">Закрыть окно</button>
     </div>
-  </div>
 
 </body>
 

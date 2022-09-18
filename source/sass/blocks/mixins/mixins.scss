@@ -5,8 +5,16 @@ $font-stack: "PT Sans", Arial, Helvetica, sans-serif;
 $white: #ffffff;
 $black: #000000;
 $grey: #333333;
+<<<<<<< HEAD
 $brown: #766357;
 $blue: #81B3D2;
+=======
+$light-gray: #f2f2f2;
+$brown: #766357;
+$blue: #81B3D2;
+$text-active: #B3B3B3;
+
+>>>>>>> d2ca77b5173bd4fcee0418c19952f825675f72ca
 
 @mixin tablet {
   @media screen and (min-width: $tablet-width) {
@@ -26,6 +34,13 @@ $blue: #81B3D2;
   }
 }
 
+<<<<<<< HEAD
+=======
+@mixin font-stack {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+>>>>>>> d2ca77b5173bd4fcee0418c19952f825675f72ca
 @mixin white {
   color: #ffffff;
 }
@@ -38,6 +53,24 @@ $blue: #81B3D2;
   color: #333333;
 }
 
+<<<<<<< HEAD
 @mixin brown {
   color: #766357;
 }
+=======
+@mixin light-grey {
+  color: #f2f2f2;
+}
+
+@mixin brown {
+  color: #766357;
+}
+
+@mixin brown {
+  color: #81B3D2;
+}
+
+@mixin text-active {
+  color: #B3B3B3;
+}
+>>>>>>> d2ca77b5173bd4fcee0418c19952f825675f72ca

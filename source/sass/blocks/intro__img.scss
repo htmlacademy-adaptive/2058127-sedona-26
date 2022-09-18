@@ -1,4 +1,14 @@
 .intro__img {
-  padding-top: 80px;
-  padding-left: 16px;
 }
+
+.intro__img--index {
+  padding-top: 65px;
+  padding-bottom: 85px;
+}
+
+.intro__img--index::after {
+  background-image: url(/img/intro-triangle.svg);
+}
+
+.intro__img--sedona {}
+

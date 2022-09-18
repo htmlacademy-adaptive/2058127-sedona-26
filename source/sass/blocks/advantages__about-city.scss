@@ -1,0 +1,9 @@
+.advantages__about-city {
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width:$desktop-width) {
+  }
+}

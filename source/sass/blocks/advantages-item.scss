@@ -1,0 +1,7 @@
+.advantages-item {
+  max-height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 33.3%;
+  }
+}

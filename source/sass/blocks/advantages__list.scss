@@ -1,13 +1,12 @@
 .advantages__list {
-  padding-top: 23px;
-  padding-left: 18px;
-  margin: 0;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
-}
+  font-family: $font-stack;
+  display: grid;
 
-.advantages-list {
-  padding-top: 23px;
-  padding-left: 18px;
-  margin: 0;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -1,6 +1,33 @@
-.intro {
- background-image: url(../img/index-back-mobile.svg);
- width: 901px;
- height: 389px;
- background-repeat: no-repeat;
+.intro::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-image: url(/img/intro-triangle.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 56px;
+  background-position: center;
+}
+
+.intro__sedona {
+  position: relative;
+  background-image: url(/img/intro__sedona__desktop.svg);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  min-height: 214px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 518px;
+  }
+}
+
+.intro__sedona::after {
+  content: "";
+  position: absolute;
+  background-image: url(/img/intro-triangle.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 57px;
+  background-position: center;
 }

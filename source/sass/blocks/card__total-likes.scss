@@ -1,10 +1,10 @@
 .card__total-likes {
-  padding-left: 20px;
-  font-family: "PT Sans";
+  margin: 0 auto;
+  font-family: $font-stack;
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }

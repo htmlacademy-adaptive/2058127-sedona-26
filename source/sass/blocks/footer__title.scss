@@ -1,7 +1,5 @@
 .footer__title {
-  padding-top: 38px;
-  padding-left: 78px;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -10,5 +8,11 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }

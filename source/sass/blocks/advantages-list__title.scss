@@ -1,5 +1,15 @@
 .advantages-list__title {
-  padding-top: 31px;
-  padding-bottom: 16px;
   margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  padding-left: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }

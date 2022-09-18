@@ -1,4 +1,17 @@
-.advantages:before {
-  background-image: url(../img/intro-triangle.svg);
+.advantages {
+  padding-top: 15px;
+}
 
+.advantages::before {
+  position: absolute;
+  background-image: url(../img/triangle-content.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 100%;
+  height: 36px;
+  background-position: center;
+
+  @include tablet {
+    display: none;
+  }
 }

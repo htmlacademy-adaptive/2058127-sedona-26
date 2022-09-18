@@ -1,6 +1,9 @@
 .logo {
   position: absolute;
-  margin-left: 4%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 185px;
   height: 96px;
+  z-index: 10;
 }

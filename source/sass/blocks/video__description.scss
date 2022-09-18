@@ -1,10 +1,11 @@
 .video__description {
-  font-family: 'PT Sans';
+  margin: 0 auto;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
   align-items: center;
   text-align: center;
-  color: #000000;
+  color: $black
 }

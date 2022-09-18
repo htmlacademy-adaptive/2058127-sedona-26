@@ -1,22 +1,18 @@
 .review__button {
+  display: block;
   width: 284px;
   height: 58px;
-  margin: 0;
-  margin-top: 26px;
-  margin-left: 0px;
-  margin-bottom: 49px;
+  margin: 0 auto;
   padding: 0;
-  justify-content: center;
   align-items: center;
-  background: #81B3D2;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  background: $blue;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $white;
   border: none;
 }
