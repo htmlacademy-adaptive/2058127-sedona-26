@@ -7,10 +7,36 @@
       color: $white;
     }
 
+    .site-list__link:hover {
+      color: $white;
+    }
+
+    .site-list__link:active {
+      color: $menu-open-text-active;
+    }
+
+    .site-list__item:hover {
+      background-color: $text-box-bg-hover;
+      border-top: 1px soild $text-box-bg-hover;
+      border-bottom: 1px solid $text-box-bg-hover;
+    }
+
+    .site-list__item:active {
+      background-color: $text-box-bg-active;
+      border-top: 1px soild $text-box-bg-active;
+      border-bottom: 1px solid $text-box-bg-active;
+    }
+
+    .site-list__item:disabled {
+      background-color: $text-box-bg-disabled;
+      border-top: 1px soild $text-box-bg-disabled;
+      border-bottom: 1px solid $text-box-bg-disabled;
+    }
+
 
     .site-list__item {
-      border-top: 1px solid #d0d0d0;
-      border-bottom: 1px solid #5184d1;
+      border-top: 1px solid $menu-box-top;
+      border-bottom: 1px solid $menu-box-bottom;
     }
 
     .nav__list {

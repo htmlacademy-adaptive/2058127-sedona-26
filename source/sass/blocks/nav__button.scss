@@ -27,18 +27,18 @@
   left: 24px;
   width: 22px;
   height: 4px;
-  background-color: #81B3D2;
-  box-shadow: 0 9px 0 0 #81b3d2, 0 18.5px 0 0 #81b3d2;
+  background-color: $blue;
+  box-shadow: 0 9px 0 0 $blue, 0 18.5px 0 0 $blue;
 }
 
-
-
-.nav__button:hover {
-  background-color: fade($blue, 50%);
+.nav__button:hover::before {
+  background-color: $burger-menu-hover;
+  box-shadow: 0 9px 0 0 $burger-menu-hover, 0 18.5px 0 0 $burger-menu-hover;
 }
 
-.nav__button:active {
-  background-color: fade($blue, 30%);
+.nav__button:active::before {
+  background-color: $burger-menu-active;
+  box-shadow: 0 9px 0 0 $burger-menu-active, 0 18.5px 0 0 $burger-menu-active;
 }
 
 .nav-menu__opened .nav__button {
@@ -53,7 +53,7 @@
     top: 24px;
     left: 18px;
     width: 36px;
-    height: 4px;
+    height: 5px;
     background-color: $white;
   }
 
@@ -66,8 +66,13 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: #f2f3f4ee;
+  }
+
   &:active::before,
   &:active::after {
-    background-color: fade($white, 30%);
+    background-color: #fefefe70;
   }
 }

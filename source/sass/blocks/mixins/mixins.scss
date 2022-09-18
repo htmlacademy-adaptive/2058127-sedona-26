@@ -5,16 +5,22 @@ $font-stack: "PT Sans", Arial, Helvetica, sans-serif;
 $white: #ffffff;
 $black: #000000;
 $grey: #333333;
-<<<<<<< HEAD
-$brown: #766357;
-$blue: #81B3D2;
-=======
 $light-gray: #f2f2f2;
 $brown: #766357;
 $blue: #81B3D2;
 $text-active: #B3B3B3;
-
->>>>>>> d2ca77b5173bd4fcee0418c19952f825675f72ca
+$burger-menu-hover: #b3d1f2;
+$burger-menu-active: #dae9f2;
+$cross-menu-hover: #cde1ed;
+$cross-menu-active: #a7cadf;
+$menu-text-hover: #81B3D2;
+$menu-text-active:#B3B3B3;
+$menu-box-top:#678fa8;
+$menu-box-bottom:#9ac2db;
+$text-box-bg-hover: #669EC0;
+$text-box-bg-active: #5496BD;
+$text-box-bg-disabled: #E5E5E5;
+$menu-open-text-active: #87b5d1;
 
 @mixin tablet {
   @media screen and (min-width: $tablet-width) {
@@ -34,13 +40,11 @@ $text-active: #B3B3B3;
   }
 }
 
-<<<<<<< HEAD
-=======
+
 @mixin font-stack {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
 
->>>>>>> d2ca77b5173bd4fcee0418c19952f825675f72ca
 @mixin white {
   color: #ffffff;
 }
@@ -53,11 +57,6 @@ $text-active: #B3B3B3;
   color: #333333;
 }
 
-<<<<<<< HEAD
-@mixin brown {
-  color: #766357;
-}
-=======
 @mixin light-grey {
   color: #f2f2f2;
 }
@@ -73,4 +72,51 @@ $text-active: #B3B3B3;
 @mixin text-active {
   color: #B3B3B3;
 }
->>>>>>> d2ca77b5173bd4fcee0418c19952f825675f72ca
+
+@mixin burger-menu-hover {
+  color: #b3d1f2;
+}
+
+@mixin burger-menu-active {
+  color: #dae9f2;
+}
+
+@mixin cross-menu-hover {
+  color: #cde1ed;
+}
+
+@mixin cross-menu-active {
+  color: #a7cadf;
+}
+
+@mixin menu-text-hover {
+  color: #81B3D2;
+}
+
+@mixin menu-text-active {
+  color: #B3B3B3;
+}
+
+@mixin menu-box-top {
+  color: #678fa8;
+}
+
+@mixin menu-box-bottom {
+  color: #9ac2db;
+}
+
+@mixin text-box-bg-hover {
+  color: #669EC0;
+}
+
+@mixin text-box-bg-active {
+  color: #5496BD;
+}
+
+@mixin text-box-bg-disabled {
+  color: #E5E5E5;
+}
+
+@mixin menu-open-text-active{
+  color: #87b5d1;
+}

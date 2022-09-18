@@ -10,4 +10,8 @@
   list-style-type: none;
   text-decoration: none;
   background: #81B3D2;
+
+  @media (min-width: $tablet-width) {
+    background: $white;
+  }
 }

@@ -9,16 +9,25 @@
   background-position: center;
 }
 
+.intro__catalog {
+  min-height: 158px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+  }
+  @media (min-width: $desktop-width) {
+    min-height: 301px;
+  }
+}
+
 .intro__sedona {
   position: relative;
   background-image: url(/img/intro__sedona__desktop.svg);
   background-position: center;
   display: flex;
   justify-content: center;
-  min-height: 214px;
 
   @media (min-width: $tablet-width) {
-    min-width: 518px;
   }
 }
 

@@ -4,15 +4,12 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: $black;
 
   @media (min-width: $tablet-width) {
-  }
-
-  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }

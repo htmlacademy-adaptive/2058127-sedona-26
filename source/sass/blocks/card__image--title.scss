@@ -1,9 +1,0 @@
-.card__image--title {
-  display: block;
-  width: 100%;
-  max-height: 280px;
-
-  @media (min-width: $tablet-width) {
-    max-height: 400px;
-  }
-}
