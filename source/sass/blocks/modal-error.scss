@@ -43,3 +43,10 @@
   color: $white;
   border: none;
 }
+
+.modal__error {
+  width: 100%;
+  max-width: 400px;
+  max-height: 347px;
+  background-color: $white;
+}

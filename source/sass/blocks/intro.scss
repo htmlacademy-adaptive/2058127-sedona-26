@@ -40,3 +40,13 @@
   height: 57px;
   background-position: center;
 }
+
+.intro__img--index {
+  padding-top: 65px;
+  padding-bottom: 85px;
+}
+
+.intro__img--index::after {
+  background-image: url(/img/intro-triangle.svg);
+}
+

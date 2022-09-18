@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
   @media (min-width: $desktop-width) {
     width: 100%;
   }
@@ -35,8 +36,6 @@
   text-transform: uppercase;
   text-align: center;
   color: $black;
-
-  @media (min-width: $tablet-width) {}
 }
 
 .wonder__button {
@@ -61,4 +60,3 @@
     width: 458px;
   }
 }
-
