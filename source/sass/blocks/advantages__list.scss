@@ -3,23 +3,10 @@
   display: grid;
 
   @media (min-width: $tablet-width) {
-    width: 256px;
-    display: block;
-    padding: 23px 0 0;
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 400px;
-  }
-}
-
-.advantages-list__photo__burger {
-  padding-top: 6px;
-  padding-left: 18px;
-}
-
-.advantages-list__photo__gifts {
-  padding-top: 6px;
-  padding-left: 18px;
 }

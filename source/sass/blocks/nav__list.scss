@@ -1,16 +1,5 @@
 .nav__list {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 51px;
-    padding-right: 29px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 92px;
-    padding-right: 72px;
-  }
 }

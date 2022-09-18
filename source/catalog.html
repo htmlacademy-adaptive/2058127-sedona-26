@@ -47,7 +47,7 @@
 
   <main class="content">
     <div class="intro intro__sedona intro--page-inner">
-      <img class="intro__img intro__img__sedona" src="img/intro-sedona.svg" alt="Sedona.">
+      <img class="intro__img intro__img--sedona" src="img/intro-sedona.svg" alt="Sedona.">
     </div>
     <div class="content__title">
       <h1 class="content__title-head content-head">Фото и видео</h1>
@@ -56,7 +56,12 @@
     </div>
     <div class="content__block-card">
       <div class="content__card card">
-        <img class="card__image__title" src="img/card-1-mobile.svg" alt="Народные просторы. Дорога, уходящая в закат.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/card-1-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/card-1-tablet.svg">
+          <img class="card__image--title" src="img/card-1-mobile.svg"
+            alt="Народные просторы. Дорога, уходящая в закат.">
+        </picture>
         <h2 class=card__content-title>Неродные просторы</h2>
         <p class="card__content">Автор фото: Борис</p>
         <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
@@ -64,22 +69,34 @@
       </div>
       <div class="content__card-list">
         <div class="content__card card">
-          <img class="card__image" src="img/card-2-mobile.svg" alt="Местная растительность. Кактус на фоне каньона.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/card-2-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/card-2-tablet.svg">
+            <img class="card__image" src="img/card-2-mobile.svg" alt="Местная растительность. Кактус на фоне каньона.">
+          </picture>
           <h2 class=card__content-title>Местная растительность</h2>
           <p class="card__content">Автор фото: Сергей</p>
-          <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+          <img class="card__likes-img" src="img/card-like-img.jpg" alt="Иконка лайков. Количество лайков:">
           <h3 class="card__total-likes">143</h3>
         </div>
         <div class="content__card card">
-          <img class="card__image" src="img/card-3-mobile.svg"
-            alt="Дорога на север. Серпантиновая дорога среди горного леса.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/card-3-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/card-3-tablet.svg">
+            <img class="card__image" src="img/card-3-mobile.svg"
+              alt="Дорога на север. Серпантиновая дорога среди горного леса.">
+          </picture>
           <h2 class=card__content-title>Дорога на север</h2>
           <p class="card__content">Автор фото: Петр</p>
           <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
           <h3 class="card__total-likes">96</h3>
         </div>
         <div class="content__card card">
-          <img class="card__image" src="img/card-4-mobile.svg" alt="Мост Дьявола. Фото каньона и простор.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/card-4-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/card-4-tablet.svg">
+            <img class="card__image" src="img/card-4-mobile.svg" alt="Мост Дьявола. Фото каньона и простор.">
+          </picture>
           <h2 class=card__content-title>Мост Дьявола</h2>
           <p class="card__content">Автор фото: Антон</p>
           <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
@@ -91,7 +108,11 @@
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <h3 class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</h3>
-      <img class="video-player" src="/img/video-mobile.svg" alt="Видеоплеер.">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/video-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/video-tablet.svg">
+        <img class="video-player" src="/img/video-mobile.svg" alt="Видеоплеер.">
+      </picture>
       <img class="video-player__polygon" src="/img/polygon.svg" alt="Запустить плеер.">
     </div>
   </main>

@@ -47,7 +47,7 @@
 
   <main class="content">
     <div class="intro intro__sedona intro--page-inner">
-      <img class="intro__img intro__img__sedona" src="img/intro-sedona.svg" alt="Sedona.">
+      <img class="intro__img intro__img--sedona" src="img/intro-sedona.svg" alt="Sedona.">
     </div>
     <div class="content__title">
       <h1 class="content__title-head content-head">Оставьте свой отзыв</h1>
@@ -77,25 +77,27 @@
       </div>
       <div class="content__rating rating">
         <h2 class="rating__title form__title">Ваше общее впечатление</h2>
-        <input class="rating__radio" type="radio" id="rating__radio-positive" value="Скорее положительное"
-          checked><label for="rating__radio-positive">Скорее положительное</label>
-        <input class="rating__radio" type="radio" id="rating__radio-negative" value="Скорее отрицательное"><label
-          for="rating__radio-negative">Скорее отрицательное</label>
-        <input class="rating__radio" type="radio" id="rating__radio-none" value="Затрудняюсь ответить"><label
-          for="rating__radio-none">Затрудняюсь ответить</label>
+        <div class="rating__radio-box">
+          <label for="rating__radio-positive"><input class="rating__radio" type="radio" id="rating__radio-positive"
+              value="Скорее положительное" checked>Скорее положительное</label>
+          <label for="rating__radio-negative"><input class="rating__radio" type="radio" id="rating__radio-negative"
+              value="Скорее отрицательное">Скорее отрицательное</label>
+          <label for="rating__radio-none"><input class="rating__radio" type="radio" id="rating__radio-none"
+              value="Затрудняюсь ответить">Затрудняюсь ответить</label>
+        </div>
       </div>
       <div class="content__attraction attraction">
         <h2 class="attraction__title form__title">Посещенные достопримечательности:</h2>
         <div class="attraction__check"><span class="visually-hidden">Выбор посещенных
             достопримечательностей.</span>
-          <input class="attraction__checkbox" type="checkbox" id="devil-bridge" value="Мост Дьявола" checked><label
-            for="devil-bridge">Мост Дьявола</label>
-          <input class="attraction__checkbox" type="checkbox" id="mount-bell" value="Гора-Колокол" checked><label
-            for="mount-bell">Гора-Колокол</label>
-          <input class="attraction__checkbox" type="checkbox" id="slide-park" value="Слайд-парк" checked><label
-            for="slide-park">Слайд парк</label>
-          <input class="attraction__checkbox" type="checkbox" id="red-rocks" value="Красные скалы"><label
-            for="red-rocks">Красные скалы</label>
+          <label for="devil-bridge"><input class="attraction__checkbox" type="checkbox" id="devil-bridge"
+              value="Мост Дьявола" checked>Мост Дьявола</label>
+          <label for="mount-bell"><input class="attraction__checkbox" type="checkbox" id="mount-bell"
+              value="Гора-Колокол" checked>Гора-Колокол</label>
+          <label for="slide-park"><input class="attraction__checkbox" type="checkbox" id="slide-park" value="Слайд-парк"
+              checked>Слайд парк</label>
+          <label for="red-rocks"><input class="attraction__checkbox" type="checkbox" id="red-rocks"
+              value="Красные скалы">Красные скалы</label>
         </div>
       </div>
       <div class="content__review review">

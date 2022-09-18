@@ -63,7 +63,7 @@
 @import "./blocks/content-head.scss";
 @import "./blocks/content-head__sub.scss";
 @import "./blocks/card__image.scss";
-@import "./blocks/card__image__title.scss";
+@import "./blocks/card__image--title.scss";
 @import "./blocks/card__content-title.scss";
 @import "./blocks/card__content.scss";
 @import "./blocks/card__likes-img.scss";
@@ -111,3 +111,5 @@
 @import "./blocks/content__attraction.scss";
 @import "./blocks/content__rating.scss";
 @import "./blocks/content__review.scss";
+@import "./blocks/video-player__polygon.scss";
+@import "./blocks/rating__radio-box.scss";

@@ -1,4 +1,6 @@
 .advantages__description {
+  margin: 0;
+  padding-top: 34px;
   font-family: $font-stack;
   font-size: 14px;
   line-height: 21px;
@@ -6,7 +8,6 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
 
   @media (min-width:$tablet-width) {
 

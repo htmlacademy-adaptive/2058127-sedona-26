@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="icon" href="img/favicons/32.svg">
-  <script src="../source/js/script.js"></script>
+  <script src="/js/script.js"></script>
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -44,11 +44,15 @@
       </ul>
     </nav>
   </header>
+  <script src="script.js"></script>
 
   <main class="content">
     <div class="content__intro-index intro">
-      <img class="intro__img intro__img__index " src="img/index-intro-text.svg"
-        alt="Welcome yo the gergeous. Sedona. Because the Gtand Canyon sucks!">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/intro-index-desktop.svg">
+        <img class="intro__img intro__img--index " src="img/index-intro-text.svg"
+          alt="Welcome yo the gergeous. Sedona. Because the Gtand Canyon sucks!">
+      </picture>
     </div>
     <div class="advantages__title theme-light">
       <h1 class="advantages__head main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -64,7 +68,7 @@
         </div>
         <div class="advantages__city">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-city-tablet.png">
+            <source media="(min-width: 768px)" srcset="img/photo-city-desktop.svg">
             <img class="advantages__city-img" src="img/city-img.svg" alt="Фото города.">
           </picture>
         </div>
@@ -97,8 +101,11 @@
           <h4 class="advantages-item__description">Да, по нему можно пройти!
             Если&nbsp;Вы осмелитесь, конечно</h4>
         </div>
-        <div>
-          <img class="advantages-list__bridge" src="img/photo-bridge.svg" alt="Вид на каньон сверху.">
+        <div class="advantages__bridge-photo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-desktop.svg">
+            <img class="advantages-list__bridge" src="img/photo-bridge.svg" alt="Вид на каньон сверху.">
+          </picture>
         </div>
       </div>
       <ul class="text-list reset-list">
