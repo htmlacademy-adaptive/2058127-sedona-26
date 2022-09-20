@@ -1,5 +1,5 @@
 .content-head__sub {
-  margin: 0 auto;
+  margin: 23px auto;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 400;
@@ -8,4 +8,8 @@
   text-transform: uppercase;
   text-align: center;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0.5px;
+  }
 }

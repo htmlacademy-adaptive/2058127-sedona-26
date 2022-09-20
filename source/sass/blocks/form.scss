@@ -1,6 +1,6 @@
 .form__title {
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
+  padding-top: 0;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 700;
@@ -10,10 +10,35 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-left: 3px;
+    margin-top: -1px;
+  }
 }
 
 .form__content {
-  margin: 0;
-  padding: 0 20px;
+  padding: 25px 20px;
 
+  @media (min-width: $tablet-width) {
+    padding: 71px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+.form__content::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    left: 50%;
+    content: "";
+    width: 1px;
+    height: 338px;
+    color: $form-before;
+    z-index: 10;
+  }
 }

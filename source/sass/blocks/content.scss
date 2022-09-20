@@ -1,7 +1,71 @@
 .content {
   width: 100%;
   background: #ffffff;
+}
+
+.content__head--addition {
+  margin: 0;
+  padding: 0;
+}
+
+.content__title {
+  margin-top: 37px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+  }
+}
+
+.content__rating {
+  padding: 35px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+    margin-top: -7px;
+  }
 
   @media (min-width: $desktop-width) {
+    padding: 0 120px;
   }
+}
+
+.content__attraction {
+  padding: 15px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+    padding-top: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+.content__review {
+  padding: 33px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+    margin-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+.content__video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content__block-card {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

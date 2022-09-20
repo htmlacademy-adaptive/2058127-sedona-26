@@ -1,5 +1,13 @@
 .socials {
-  margin: 0 auto;
-  padding: 0;
+  margin: 14px auto;
+  padding-left: 7px;
   list-style-type: none;
+}
+
+.socials__item {
+  display: block;
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-right: 6px;
 }

@@ -5,13 +5,67 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-align: center;
   list-style-type: none;
   text-decoration: none;
-  background: #81B3D2;
+  background: #81b3d2;
 
   @media (min-width: $tablet-width) {
     background: $white;
   }
+}
+
+.site-list__link--active {
+  color: $brown;
+  margin-left: 3px;
+}
+
+
+.site-list__link {
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
+}
+
+.site-list__link:hover {
+  color: $blue;
+}
+
+.site-list__link:focus {
+  color: $black;
+}
+
+.site-list__link:active {
+  color: $text-active;
+}
+
+.site-list__item {
+  text-align: center;
+}
+
+.site-list__item:nth-child(4n + 3) {
+  grid-column: 4/5;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 120px;
+  }
+}
+
+.site-list__item:hover {
+  color: #81b3d2;
+}
+
+.site-list__item:focus {
+  color: #b3b3b3;
+}
+
+.site-list__item:active {
+  color: $brown;
 }

@@ -4,9 +4,9 @@
   gap: 20px;
   align-items: center;
   background: $white;
-  padding: 40px 79px;
+  padding: 18.5px 0;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -32,40 +32,21 @@
 
 .footer__logo {
   margin: 0;
+  margin-top: 7px;
   padding: 0;
   text-align: center;
   display: flex;
 }
 
-.footer__academy {
-  width: 100px;
-  padding-top: 30px;
-  padding-left: 96px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 31px;
-    padding-right: 68px;
-  }
-}
-
-.footer__academy-logo {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  font-family: $font-stack;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
+.footer__logo-academy {
+  vertical-align: middle;
   color: $black;
 }
 
-.footer__academy-img {
-  margin: 0;
+.footer__logo-academy:hover {
+  color: $blue;
 }
 
+.footer__logo-academy:active {
+  color: $text-active;
+}

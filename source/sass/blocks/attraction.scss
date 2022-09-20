@@ -1,0 +1,70 @@
+.attraction__check {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 9px;
+    padding-left: 84px;
+    padding-right: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.attraction__title {
+  margin-top: 0;
+  margin-left: -2px;
+  padding: 0;
+  text-align: center;
+}
+
+.attraction__checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.attraction__text {
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+}
+
+.attraction__fake-input {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attraction__fake-input:hover {
+  background-color: $text-box-bg-disabled_ckeckbox-hover;
+}
+
+.attraction__fake-input:active {
+  background-color: $check-box-active;
+  content: url("/img/tick-active.svg");
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+
+.attraction__checkbox:checked ~ .attraction__fake-input::before {
+  content: url("/img/tick.svg");
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
