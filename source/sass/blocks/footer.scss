@@ -1,17 +1,89 @@
 .footer {
   display: flex;
   flex-direction: column;
+  gap: 19px;
+  align-items: center;
+  background: $white;
+  padding: 38.5px 0;
 
-  @media (min-width:$tablet-width) {
-    display: flex;
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 23.5px 60px;
   }
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
+    padding: 23.5px 120px;
+  }
+}
+
+.footer__title {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  }
+}
+
+.footer__academy-link {
+  color: $black;
+  text-decoration: none;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.footer__academy-link:hover {
+  color: $blue;
+}
+
+.footer__logo-academy {
+  padding-top: 8px;
+  padding-left: 8px;
+  vertical-align: middle;
+  color: currentColor;
+}
+
+.footer__logo-academy:hover {
+  color: $blue;
+}
+
+.footer__logo-academy:active {
+  color: $text-active;
+}
+
+.footer__form {
+  padding-top: 18.5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 86.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61.5px;
+  }
+}
+
+.footer__catalog {
+  padding: 24.5px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 58.5px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 101.5px 120px;
   }
 }

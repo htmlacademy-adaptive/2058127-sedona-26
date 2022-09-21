@@ -1,0 +1,106 @@
+.text__title--index {
+  margin: 0;
+  padding: 0;
+  padding-top: 28px;
+  font-family: $font-stack;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 17px;
+    padding-top: 42px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 89px 0;
+  }
+}
+
+.text__title--road {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 39px;
+    padding-top: 42px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 111px 0;
+  }
+}
+
+.text__title--tourists {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 48px;
+    padding-top: 42px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 120px 0;
+  }
+}
+
+.text__sub--index {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $grey;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -6px;
+  }
+}
+
+.text__description--index {
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  padding-bottom: 14.5px;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 10px;
+    padding-top: 3px;
+  }
+}
+
+.text__description--road {
+  padding-right: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding: 2.5px 50px;
+    margin-right: 3px;
+  }
+}
+
+.text__description--tourists {
+  padding-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding: 2.5px 38px;
+  }
+}

@@ -1,0 +1,46 @@
+.video__title {
+  margin: 0 auto;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+  }
+}
+
+.video__description {
+  margin: 0 auto;
+  padding: 26px 9px;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 143px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 359px;
+  }
+}

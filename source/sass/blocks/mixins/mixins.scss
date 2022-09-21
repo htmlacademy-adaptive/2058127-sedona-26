@@ -1,13 +1,32 @@
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width-only: 767px;
-$font-stack: "PT Sans", Arial, Helvetica, sans-serif;
+$font-stack: "PT Sans", arial, helvetica, sans-serif;
 $white: #ffffff;
 $black: #000000;
 $grey: #333333;
+$light-gray: #f2f2f2;
+$dark-grey: #aaaaaa;
 $brown: #766357;
-$blue: #81B3D2;
-
+$blue: #81b3d2;
+$text-active: #b3b3b3;
+$burger-menu-hover: #b3d1f2;
+$burger-menu-active: #dae9f2;
+$cross-menu-hover: #cde1ed;
+$cross-menu-active: #a7cadf;
+$menu-text-hover: #81b3d2;
+$menu-text-active: #b3b3b3;
+$menu-box-top: #678fa8;
+$menu-box-bottom: #9ac2db;
+$text-box-bg-hover: #669ec0;
+$text-box-bg-active: #5496bd;
+$text-box-bg-disabled_ckeckbox-hover: #e5e5e5;
+$menu-open-text-active: #87b5d1;
+$check-box-active: #d5d5d5;
+$check-box-before-active: #a5a5a5;
+$form-img-bg: #e6e6e6;
+$form-before: #d8d8d8;
+$catalog-bg-theme: #eaeaea;
 
 @mixin tablet {
   @media screen and (min-width: $tablet-width) {
@@ -27,6 +46,11 @@ $blue: #81B3D2;
   }
 }
 
+
+@mixin font-stack {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+}
+
 @mixin white {
   color: #ffffff;
 }
@@ -39,6 +63,90 @@ $blue: #81B3D2;
   color: #333333;
 }
 
+@mixin light-grey {
+  color: #f2f2f2;
+}
+
 @mixin brown {
   color: #766357;
+}
+
+@mixin brown {
+  color: #81b3d2;
+}
+
+@mixin text-active {
+  color: #b3b3b3;
+}
+
+@mixin burger-menu-hover {
+  color: #b3d1f2;
+}
+
+@mixin burger-menu-active {
+  color: #dae9f2;
+}
+
+@mixin cross-menu-hover {
+  color: #cde1ed;
+}
+
+@mixin cross-menu-active {
+  color: #a7cadf;
+}
+
+@mixin menu-text-hover {
+  color: #81b3d2;
+}
+
+@mixin menu-text-active {
+  color: #b3b3b3;
+}
+
+@mixin menu-box-top {
+  color: #678fa8;
+}
+
+@mixin menu-box-bottom {
+  color: #9ac2db;
+}
+
+@mixin text-box-bg-hover {
+  color: #669ec0;
+}
+
+@mixin text-box-bg-active {
+  color: #5496bd;
+}
+
+@mixin text-box-bg-disabled {
+  color: #e5e5e5;
+}
+
+@mixin menu-open-text-active {
+  color: #87b5d1;
+}
+
+@mixin check-box-active {
+  color: #d5d5d5;
+}
+
+@mixin check-box-before-active {
+  color: #a5a5a5;
+}
+
+@mixin form-img-bg {
+  color: #e6e6e6;
+}
+
+@mixin dark-grey {
+  color: #aaaaaa;
+}
+
+@mixin form-before {
+  color: #d8d8d8;
+}
+
+@mixin catalog-bg-theme {
+  color: #eaeaea;
 }

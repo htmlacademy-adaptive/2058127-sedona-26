@@ -2,3 +2,157 @@
   width: 100%;
   background: #ffffff;
 }
+
+.content__intro-index {
+  position: relative;
+  margin: 0;
+  background-color: $light-gray;
+  min-height: 389px;
+  display: flex;
+  justify-content: center;
+  background-image: url("/img/intro__index-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content__head--addition {
+  margin: 0;
+  padding: 0;
+}
+
+.content__title {
+  margin-top: 37px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 98px;
+  }
+}
+
+.content__rating {
+  padding: 35px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+    margin-top: -7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 120px;
+  }
+}
+
+.content__attraction {
+  padding: 15px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+    padding-top: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 21px 120px;
+  }
+}
+
+.content__review {
+  padding: 33px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+    margin-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 216px;
+  }
+}
+
+.content__video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content__block-card {
+  margin: 0 20px;
+  padding-top: 31px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 60px;
+    padding-top: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-top: 52px;
+  }
+}
+
+.content__user-information {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 6px;
+  }
+}
+
+.content__title-head {
+  margin: 0 auto;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.content__introduce {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+
+.content__information {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 65px;
+  }
+}
+
+.content__card-list {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

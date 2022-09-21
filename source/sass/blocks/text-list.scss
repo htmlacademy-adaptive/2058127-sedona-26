@@ -1,9 +1,8 @@
-.text-list {
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
+.text-list--index {
+  display: flex;
+  flex-direction: column;
 
-  @media (min-width: $desktop-width) {
-    display: flex;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 }

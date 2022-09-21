@@ -1,9 +1,13 @@
 label {
-  font-family: 'PT Sans';
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  align-items: center;
   color: $black;
 }

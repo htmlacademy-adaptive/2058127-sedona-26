@@ -1,3 +1,31 @@
 .video-player {
-  margin-left: 20px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 190px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    min-width: 648px;
+    min-height: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    min-width: 800px;
+    min-height: 560px;
+  }
+}
+
+.video-player__polygon {
+  position: absolute;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  top: 60%;
+  transform: translateX(-50%);
+  left: 50%;
 }

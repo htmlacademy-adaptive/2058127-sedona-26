@@ -1,5 +1,6 @@
 .content-head__sub {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  margin: 23px auto;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -7,4 +8,33 @@
   text-transform: uppercase;
   text-align: center;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 133px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9.5px 349px;
+  }
+}
+
+.content-head__sub--catalog {
+  margin: 25px auto;
+  padding: 0 15px;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 7px 377px;
+  }
 }

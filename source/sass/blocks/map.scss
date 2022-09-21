@@ -1,0 +1,15 @@
+.map {
+  padding-top: 50px;
+  width: 100%;
+  min-height: 400px;
+  display: block;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+  }
+}

@@ -1,0 +1,83 @@
+.review__bottom {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .review__button {
+      margin: 0;
+    }
+  }
+}
+
+.review__textarea {
+  margin-top: 20px;
+  margin-bottom: 52px;
+  padding: 16.75px;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  width: 100%;
+  min-height: 150px;
+  color: $dark-grey;
+  background: $light-gray;
+  border: none;
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 160px;
+    margin-bottom: 45px;
+    margin-top: 28px;
+  }
+}
+
+.review__text {
+  margin: 0;
+  padding-top: 2px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: $font-stack;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    padding-top: 22px;
+  }
+}
+
+.review__button {
+  display: block;
+  width: 281px;
+  height: 57px;
+  margin: 0;
+  padding-right: 11px;
+  padding-top: 3px;
+  align-items: center;
+  background: $blue;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-right: 11px;
+    padding-top: 3px;
+    width: 384px;
+  }
+}

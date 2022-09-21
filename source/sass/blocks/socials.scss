@@ -1,4 +1,17 @@
 .socials {
+  margin: 14px auto;
+  padding-left: 7px;
   list-style-type: none;
-  margin-left: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.socials__item {
+  display: block;
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-right: 6px;
 }

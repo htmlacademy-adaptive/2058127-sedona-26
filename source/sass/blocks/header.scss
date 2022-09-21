@@ -1,16 +1,15 @@
 .header {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
   background-color: $white;
-  min-height: 56px;
+  min-height: 57px;
+}
 
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-  }
+.header__toggle {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 17px;
+  cursor: pointer;
 }

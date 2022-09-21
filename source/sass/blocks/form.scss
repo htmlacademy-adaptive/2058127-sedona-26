@@ -1,0 +1,44 @@
+.form__title {
+  margin: 0;
+  padding-top: 0;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-left: 3px;
+    margin-top: -1px;
+  }
+}
+
+.form__content {
+  padding: 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 26px 120px;
+  }
+}
+
+.form__content::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    left: 50%;
+    content: "";
+    width: 1px;
+    height: 338px;
+    color: $form-before;
+    z-index: 10;
+  }
+}
