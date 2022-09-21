@@ -46,7 +46,7 @@
 
 .modal__error {
   width: 100%;
-  max-width: 400px;
+  min-width: 320px;
   max-height: 347px;
   background-color: $white;
 }

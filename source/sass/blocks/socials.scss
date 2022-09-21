@@ -2,6 +2,10 @@
   margin: 14px auto;
   padding-left: 7px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .socials__item {

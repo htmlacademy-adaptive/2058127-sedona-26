@@ -10,14 +10,13 @@
   justify-content: space-between;
 }
 
-
-
 /* Меню открытия  */
 
 .nav-menu__opened {
   @media (max-width: $mobile-width-only) {
-
     z-index: 10;
+    margin: 0;
+    margin-top: -57px;
 
     .site-list__link {
       color: $white;

@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="/css/style.min.css" />
   <link rel="icon" href="img/favicons/32.svg">
-  <script src="../source/js/script.js"></script>
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -143,12 +142,18 @@
         d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z"
         fill="white" />
     </symbol>
+    <!-- footer logo-->
+    <symbol id="footer__logo" width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M14.1506 0.25H14.0502L0.5 1.58944V25.221L14.0502 32.875L27.5 25.221V1.58944L14.1506 0.25ZM25.5929 11.8266L14.0502 5.32075V5.22507H13.9498L13.8494 5.1294V5.22507L2.40706 11.8266V3.21591L13.9498 2.06782L25.5929 3.21591V11.8266ZM13.9498 6.75587L25.4926 13.1661L20.9758 15.6536L13.8494 11.6353V12.9747L19.7714 16.3233L18.868 16.8017L13.8494 13.9315V15.2709L17.6636 17.4714L16.8606 17.9498L13.8494 16.2276V17.5671L15.7565 18.6195L13.9498 19.6719L2.50743 13.2617L13.9498 6.75587ZM2.40706 14.6968L13.8494 21.2027V22.1595L5.92007 17.6628V19.0022L13.9498 23.5946V24.647L5.92007 20.1503V21.4897L13.9498 26.0821L22.0799 21.3941V16.419L25.4926 14.5055V24.0729L13.9498 30.6745L2.40706 24.1686V14.6968Z"
+        fill="currentColor" />
+    </symbol>
   </svg>
 
   <header class="header">
     <a class="logo__link" href="index.html">
       <svg class="logo">
-        <use xlink href="#logo"></use>
+        <use xlink:href="#logo"></use>
       </svg>
     </a>
     <nav class="nav nav-menu__closed nav__nojs">
@@ -181,9 +186,9 @@
   </header>
 
   <main class="content">
-    <div class="intro intro__sedona">
+    <div class="intro intro__sedona intro__sedona--catalog">
       <svg class="intro__sedona-svg" width="459.5" height="79.8px">
-        <use xlink:href="#intro__sedona-svg">
+        <use xlink:href="#intro__sedona-svg"></use>
       </svg>
       <picture>
         <img class="intro__img intro__img--sedona intro__img--form" src="img/intro-sedona.svg" alt="Sedona.">
@@ -191,33 +196,47 @@
     </div>
     <div class="content__title">
       <h1 class="content__title-head content-head">Фото и видео</h1>
-      <h2 class="content-head__sub">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам
+      <h2 class="content-head__sub--catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам
         забыть о политике и экономике.</h2>
     </div>
     <div class="content__block-card">
-      <div class="content__card card">
+      <div class="content__card--head card">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/card-1-desktop.jpg">
+          <source media="(min-width: 1280px)" srcset="img/card-1-desktop.jpg">
           <source media="(min-width: 768px)" srcset="img/card-1-tablet.jpg">
           <img class="card__image--title" src="img/card-1-mobile.jpg"
             alt="Народные просторы. Дорога, уходящая в закат.">
         </picture>
-        <h2 class=card__content-title>Неродные просторы</h2>
-        <p class="card__content">Автор фото: Борис</p>
-        <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-        <h3 class="card__total-likes">1350</h3>
+        <div class="card__content--block card__content--block-head">
+          <h2 class=card__content-title>Неродные просторы</h2>
+          <p class="card__content">Автор фото: Борис</p>
+          <div class="card__likes-block">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/white-like.svg">
+              <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+            </picture>
+            <p class="card__total-likes">1350</p>
+          </div>
+        </div>
       </div>
       <div class="content__card-list">
         <div class="content__card card">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/card-2-desktop.jpg">
+            <source media="(min-width: 1280px)" srcset="img/card-2-desktop.jpg">
             <source media="(min-width: 768px)" srcset="img/card-2-tablet.jpg">
             <img class="card__image" src="img/card-2-mobile.jpg" alt="Местная растительность. Кактус на фоне каньона.">
           </picture>
-          <h2 class=card__content-title>Местная растительность</h2>
-          <p class="card__content">Автор фото: Сергей</p>
-          <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-          <h3 class="card__total-likes">143</h3>
+          <div class="card__content--block">
+            <h2 class=card__content-title>Местная&nbsp;растительность</h2>
+            <p class="card__content">Автор фото: Сергей</p>
+            <div class="card__likes-block">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/white-like.svg">
+                <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+              </picture>
+              <p class="card__total-likes">143</p>
+            </div>
+          </div>
         </div>
         <div class="content__card card">
           <picture>
@@ -226,10 +245,17 @@
             <img class="card__image" src="img/card-3-mobile.jpg"
               alt="Дорога на север. Серпантиновая дорога среди горного леса.">
           </picture>
-          <h2 class=card__content-title>Дорога на север</h2>
-          <p class="card__content">Автор фото: Петр</p>
-          <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-          <h3 class="card__total-likes">96</h3>
+          <div class="card__content--block card__content--block-theme">
+            <h2 class=card__content-title>Дорога на север</h2>
+            <p class="card__content">Автор фото: Петр</p>
+            <div class="card__likes-block">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/white-like.svg">
+                <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+              </picture>
+              <p class="card__total-likes">96</p>
+            </div>
+          </div>
         </div>
         <div class="content__card card">
           <picture>
@@ -237,10 +263,17 @@
             <source media="(min-width: 768px)" srcset="img/card-4-tablet.jpg">
             <img class="card__image" src="img/card-4-mobile.jpg" alt="Мост Дьявола. Фото каньона и простор.">
           </picture>
-          <h2 class=card__content-title>Мост Дьявола</h2>
-          <p class="card__content">Автор фото: Антон</p>
-          <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-          <h3 class="card__total-likes">254</h3>
+          <div class="card__content--block">
+            <h2 class=card__content-title>Мост Дьявола</h2>
+            <p class="card__content">Автор фото: Антон</p>
+            <div class="card__likes-block">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/white-like.svg">
+                <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+              </picture>
+              <p class="card__total-likes">254</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -251,13 +284,13 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/video-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/video-tablet.svg">
-        <img class="video-player" src="/img/video-mobile.svg" alt="Видеоплеер.">
+        <img class="video-player" src="img/video-tablet.svg" alt="Видеоплеер.">
       </picture>
-      <img class="video-player__polygon" src="/img/polygon.svg" alt="Запустить плеер.">
+      <img class="video-player__polygon" src="/img/polygon.svg" width="50" height="50" alt="Запустить плеер.">
     </div>
   </main>
 
-  <footer class="footer theme-light">
+  <footer class="footer footer__catalog theme-light">
     <span class="footer__title">#visitSEDONA</span>
     <ul class="footer__socials socials">
       <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">VKontakte</span>
@@ -299,12 +332,17 @@
       </li>
     </ul>
     <div class="footer__logo">
-      <a class="footer__academy-logo" href="https://htmlacademy.ru/">Разработано<img class="footer__academy-logo-img"
-          src="img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"><span class="visually-hidden">Логотип
-          академии.</span></a>
+      <a class="footer__academy-link" href="https://htmlacademy.ru">
+        Разработано
+        <svg class="footer__logo-academy" width="35" height="50">
+          <use xlink:href="#footer__logo"></use>
+        </svg>
+      </a>
     </div>
+
   </footer>
 
+  <script src="/js/script.js" defer></script>
 </body>
 
 </html>

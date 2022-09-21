@@ -56,9 +56,22 @@
   background-position: center;
 }
 
+.intro__sedona--catalog {
+  padding-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 19px;
+    min-height: 300px;
+  }
+}
+
 .intro__img--index {
-  padding-top: 65px;
-  padding-bottom: 85px;
+  padding-top: 89px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 85px;
+  }
 }
 
 .intro__img--index::after {
@@ -71,5 +84,17 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+}
+
+.intro__form--tablet {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+}
+
+.intro__form--desktop {
+  @media (min-width: $desktop-width) {
+    min-height: 299px;
   }
 }

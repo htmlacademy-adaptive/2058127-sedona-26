@@ -26,6 +26,7 @@ $check-box-active: #d5d5d5;
 $check-box-before-active: #a5a5a5;
 $form-img-bg: #e6e6e6;
 $form-before: #d8d8d8;
+$catalog-bg-theme: #eaeaea;
 
 @mixin tablet {
   @media screen and (min-width: $tablet-width) {
@@ -144,4 +145,8 @@ $form-before: #d8d8d8;
 
 @mixin form-before {
   color: #d8d8d8;
+}
+
+@mixin catalog-bg-theme {
+  color: #eaeaea;
 }

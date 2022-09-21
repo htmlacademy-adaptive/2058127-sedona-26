@@ -1,5 +1,13 @@
 .advantages {
-  padding-top: 15px;
+  padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 43px;
+  }
 }
 
 .advantages::before {
@@ -18,50 +26,15 @@
 
 .advantages__title {
   position: relative;
-  padding-top: 27px;
+  padding-top: 31px;
   font-family: $font-stack;
-}
 
-
-.advantages__house-svg--mobile-width {
   @media (min-width: $tablet-width) {
-    display: none;
+    padding-top: 49px;
   }
-}
 
-.advantages__house-svg--tablet-width {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.advantages__burger-svg--mobile-width {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.advantages__burger-svg--tablet-width {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.advantages__gift-svg--mobile-width {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.advantages__gift-svg--tablet-width {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
   }
 }
 
@@ -78,14 +51,83 @@
   }
 }
 
+.advantages__list--house-svg {
+  margin-left: 4px;
+  width: 53px;
+  padding-top: 13px;
+  padding-left: 14px;
+  height: 73px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-left: 86px;
+    width: 161px;
+    height: 133px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 302px;
+  }
+}
+
+.advantages__list--burger-svg {
+  margin-left: 4px;
+  width: 53px;
+  padding-top: 9px;
+  padding-left: 14px;
+  height: 73px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-left: 86px;
+    width: 161px;
+    height: 133px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 304px;
+  }
+}
+
+.advantages__list--gift-svg {
+  padding-top: 7px;
+  padding-left: 21px;
+  margin-left: 1px;
+  width: 53px;
+  height: 73px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-left: 86px;
+    width: 161px;
+    height: 133px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+    width: 309px;
+    height: 133px;
+  }
+}
+
 .advantages__item {
   display: flex;
   flex-direction: column;
-  padding-top: 54px;
-  gap: 20px;
+  padding-top: 71px;
+  padding-right: 6px;
+  gap: 11px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 256px;
+    gap: 21px;
+    padding-top: 40px;
+    padding-left: 5px;
+  }
 }
 
 .advantages__item-list {
+  margin-bottom: 52px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     max-height: 256px;
@@ -100,6 +142,7 @@
 
 .advantages__head {
   margin: 0 auto;
+  margin-right: 5px;
   font-family: $font-stack;
   font-size: 18px;
   font-weight: 700;
@@ -125,12 +168,14 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+  }
 }
 
 .advantages__city-img {
   display: block;
-  width: 100%;
-  height: 260px;
 
   @media (min-width: $tablet-width) {
     height: 256px;
@@ -150,9 +195,12 @@
 }
 
 .advantages__about-bridge {
+  margin-top: 51px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    margin-top: 74px;
   }
 }

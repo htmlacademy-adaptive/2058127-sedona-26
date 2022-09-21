@@ -1,10 +1,154 @@
+.card__content--block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 14px;
+  padding-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 66.6% 33.3%;
+    background-color: $light-gray;
+    min-height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 400px;
+    color: $white;
+    background-color: $black;
+    opacity: 0.3;
+    bottom: 0;
+  }
+}
+
+.card__content--block-theme {
+  @media (min-width: $tablet-width) {
+    background-color: $catalog-bg-theme;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: opacify($color: $black, $amount: 0);
+  }
+}
+
+.card__content--block-head {
+  @media (min-width: $desktop-width) {
+    bottom: -32px;
+    min-width: 1200px;
+  }
+}
+
+.card__likes-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px;
+    padding-top: 19px;
+    padding-right: 20px;
+  }
+}
+
+.card__likes-img {
+  padding-top: 8px;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
 .card__total-likes {
+  margin: 0;
+  padding-top: 13px;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.card__image {
+  display: block;
   margin: 0 auto;
+  width: 100%;
+  max-height: 280px;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 100%;
+    max-height: 267px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    object-fit: none;
+  }
+}
+
+.card__image--title {
+  display: block;
+  margin: 0 auto;
+  max-height: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 320px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+.card__content {
+  margin: 0;
+  margin-top: -2px;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 27px;
+  line-height: 26px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    grid-row: 2;
+    margin-top: -22px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.card__content-title {
+  margin: 0;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-top: 22px;
+    padding-left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }

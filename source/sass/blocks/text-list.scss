@@ -1,5 +1,8 @@
-.text-list {
+.text-list--index {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
   }
 }

@@ -1,13 +1,11 @@
 .wonder {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  padding-top: 42px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
+    padding-top: 60px;
   }
 }
 
@@ -27,7 +25,8 @@
 
 .wonder__description {
   margin: 0;
-  padding: 0;
+  padding: 0 29px;
+  padding-top: 22px;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 400;
@@ -36,6 +35,14 @@
   text-transform: uppercase;
   text-align: center;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 141px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 357px;
+  }
 }
 
 .wonder__button {
@@ -58,5 +65,10 @@
 
   @media (min-width: $tablet-width) {
     width: 458px;
+    margin-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 16px;
   }
 }

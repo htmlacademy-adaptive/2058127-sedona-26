@@ -17,6 +17,10 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 12px;
+  }
 }
 
 .introduce__name {

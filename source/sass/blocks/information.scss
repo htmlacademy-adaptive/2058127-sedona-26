@@ -1,3 +1,9 @@
+.information__title {
+  @media (min-width: $desktop-width) {
+    padding-left: 9px;
+  }
+}
+
 .information__input-img {
   width: 25px;
   height: 40px;
@@ -20,6 +26,10 @@
     padding-top: 27.5px;
     padding-left: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 94px;
+  }
 }
 
 .information__text {
@@ -34,6 +44,10 @@
     margin-left: 45px;
     margin-bottom: -12px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 78px;
+  }
 }
 
 .information__phone-block {
@@ -46,8 +60,8 @@
 }
 
 .information__phone-img {
-  width: 18px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .information__e-mail {
@@ -55,6 +69,10 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 78px;
   }
 }
 
