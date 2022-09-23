@@ -39,11 +39,17 @@
 
 .intro__sedona {
   position: relative;
-  background-image: url("/img/intro__sedona__desktop.svg");
+  background-image: url("/img/intro__sedona__desktop.jpg");
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-resolution: 2dppx) {
+  .intro__sedona {
+    background-image: url("/img/intro__sedona__desktop@2x.jpg");
+  }
 }
 
 .intro__sedona::after {
@@ -67,6 +73,7 @@
 
 .intro__img--index {
   padding-top: 89px;
+  padding-bottom: 80px;
 
   @media (min-width: $tablet-width) {
     padding-top: 76px;

@@ -1,3 +1,11 @@
+.content-head {
+  display: flex;
+  padding-top: 69px;
+  font-size: 30px;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
 .content-head__sub {
   margin: 23px auto;
   font-family: $font-stack;

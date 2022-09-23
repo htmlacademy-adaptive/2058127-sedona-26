@@ -38,7 +38,7 @@
 
 .card__content--block-head {
   @media (min-width: $desktop-width) {
-    bottom: -32px;
+    position: absolute;
     min-width: 1200px;
   }
 }
