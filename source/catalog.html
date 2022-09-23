@@ -151,12 +151,12 @@
   </svg>
 
   <header class="header">
-    <a class="logo__link" href="index.html">
+    <a class="logo" href="index.html">
       <svg class="logo">
         <use xlink:href="#logo"></use>
       </svg>
     </a>
-    <nav class="nav nav-menu__closed nav__nojs">
+    <nav class="nav nav-menu nav-menu__closed nav__nojs">
       <button class="nav__button reset-list" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -195,83 +195,100 @@
       </picture>
     </div>
     <div class="content__title">
-      <h1 class="content__title-head content-head">Фото и видео</h1>
+      <h1 class="content-head">Фото и видео</h1>
       <h2 class="content-head__sub--catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам
         забыть о политике и экономике.</h2>
     </div>
     <div class="content__block-card">
       <div class="content__card content__card--head card">
-        <picture>
-          <source media="(min-width: 1280px)" srcset="img/card-1-desktop.jpg">
-          <source media="(min-width: 768px)" srcset="img/card-1-tablet.jpg">
-          <img class="card__image--title" src="img/card-1-mobile.jpg"
-            alt="Народные просторы. Дорога, уходящая в закат.">
-        </picture>
+        <a class="picture-link" href="#">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/card-1-desktop.jpg" 1x,  srcset="img/card-1-desktop@2x.jpg" 2x>
+            <source media="(min-width: 768px)" srcset="img/card-1-tablet.jpg" 1x, srcset="img/card-1-tablet@2x.jpg" 2x>
+            <img class="card__image--title" src="img/card-1-mobile.jpg" srcset="img/card-1-mobile@2x.jpg"
+              alt="Народные просторы. Дорога, уходящая в закат.">
+          </picture>
+        </a>
         <div class="card__content--block card__content--block-head">
           <h2 class=card__content-title>Неродные просторы</h2>
           <p class="card__content">Автор фото: Борис</p>
           <div class="card__likes-block">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/white-like.svg">
-              <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-            </picture>
-            <p class="card__total-likes">1350</p>
+            <a class="like-link" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/white-like.svg">
+                <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+              </picture>
+              <p class="card__total-likes">1350</p>
+            </a>
           </div>
         </div>
       </div>
       <div class="content__card-list">
         <div class="content__card card">
-          <picture>
-            <source media="(min-width: 1280px)" srcset="img/card-2-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/card-2-tablet.jpg">
-            <img class="card__image" src="img/card-2-mobile.jpg" alt="Местная растительность. Кактус на фоне каньона.">
-          </picture>
+          <a class="picture-link" href="#">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/card-2-desktop.jpg" 1x, srcset="img/card-2-desktop@2x.jpg" 2x>
+              <source media="(min-width: 768px)" srcset="img/card-2-tablet.jpg" 1x, srcset="img/card-2-tablet@2x.jpg" 2x>
+              <img class="card__image" src="img/card-2-mobile.jpg" srcset="img/card-2-mobile@2x.jpg"
+                alt="Местная растительность. Кактус на фоне каньона.">
+            </picture>
+          </a>
           <div class="card__content--block">
             <h2 class=card__content-title>Местная&nbsp;растительность</h2>
             <p class="card__content">Автор фото: Сергей</p>
             <div class="card__likes-block">
-              <picture>
-                <source media="(min-width: 1280px)" srcset="img/white-like.svg">
-                <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-              </picture>
-              <p class="card__total-likes">143</p>
+              <a class="like-link" href="#">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/white-like.svg">
+                  <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+                </picture>
+                <p class="card__total-likes">143</p>
+              </a>
             </div>
           </div>
         </div>
         <div class="content__card card">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/card-3-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/card-3-tablet.jpg">
-            <img class="card__image" src="img/card-3-mobile.jpg"
-              alt="Дорога на север. Серпантиновая дорога среди горного леса.">
-          </picture>
+          <a class="picture-link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/card-3-desktop.jpg" 1x, srcset="img/card-3-desktop@2x.jpg" 2x>
+              <source media="(min-width: 768px)" srcset="img/card-3-tablet.jpg" 1x, srcset="img/card-3-tablet@2x.jpg" 2x>
+              <img class="card__image" src="img/card-3-mobile.jpg" srcset="img/card-3-mobile@2x.jpg"
+                alt="Дорога на север. Серпантиновая дорога среди горного леса.">
+            </picture>
+          </a>
           <div class="card__content--block card__content--block-theme">
             <h2 class=card__content-title>Дорога на север</h2>
             <p class="card__content">Автор фото: Петр</p>
             <div class="card__likes-block">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/white-like.svg">
-                <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-              </picture>
-              <p class="card__total-likes">96</p>
+              <a class="like-link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/white-like.svg">
+                  <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+                </picture>
+                <p class="card__total-likes">96</p>
+              </a>
             </div>
           </div>
         </div>
         <div class="content__card card">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/card-4-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/card-4-tablet.jpg">
-            <img class="card__image" src="img/card-4-mobile.jpg" alt="Мост Дьявола. Фото каньона и простор.">
-          </picture>
+          <a class="picture-link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/card-4-desktop.jpg" 1x, srcset="img/card-4-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/card-4-tablet.jpg"1x, srcset="img/card-4-tablet@2x.jpg" 2x>
+              <img class="card__image" src="img/card-4-mobile.jpg" srcset="img/card-4-mobile@2x.jpg" alt="Мост Дьявола. Фото каньона и простор.">
+            </picture>
+          </a>
           <div class="card__content--block">
             <h2 class=card__content-title>Мост Дьявола</h2>
             <p class="card__content">Автор фото: Антон</p>
             <div class="card__likes-block">
-              <picture>
-                <source media="(min-width: 1280px)" srcset="img/white-like.svg">
-                <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
-              </picture>
-              <p class="card__total-likes">254</p>
+              <a class="like-link" href="#">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/white-like.svg">
+                  <img class="card__likes-img" src="img/card-like-img.svg" alt="Иконка лайков. Количество лайков:">
+                </picture>
+                <p class="card__total-likes">254</p>
+              </a>
             </div>
           </div>
         </div>
@@ -281,12 +298,14 @@
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <h3 class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</h3>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/video-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/video-tablet.svg">
-        <img class="video-player" src="img/video-tablet.svg" alt="Видеоплеер.">
-      </picture>
-      <img class="video-player__polygon" src="/img/polygon.svg" width="50" height="50" alt="Запустить плеер.">
+      <button class="player-button" type="button">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.svg">
+          <img class="video-player" src="img/video-player.jpg" alt="Видеоплеер.">
+        </picture>
+        <img class="video-player__polygon" src="/img/polygon.svg" width="50" height="50" alt="Запустить плеер.">
+      </button>
     </div>
   </main>
 

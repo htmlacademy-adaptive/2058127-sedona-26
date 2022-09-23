@@ -176,6 +176,9 @@
 
 .advantages__city-img {
   display: block;
+  margin: 0 auto;
+  min-width: 320px;
+  max-height: 260px;
 
   @media (min-width: $tablet-width) {
     height: 256px;

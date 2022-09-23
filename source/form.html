@@ -152,12 +152,12 @@
 
 
   <header class="header">
-    <a class="logo__link" href="index.html">
+    <a class="logo" href="index.html">
       <svg class="logo">
         <use xlink:href="#logo"></use>
       </svg>
     </a>
-    <nav class="nav nav-menu__closed nav__nojs">
+    <nav class="nav nav-menu nav-menu__closed nav__nojs">
       <button class="nav__button reset-list" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -193,105 +193,106 @@
       </svg>
       <picture>
         <source media="(min-width: 768px)" srcset="img/intro-sedona-tablet.svg">
-        <img class="intro__img intro__img--sedona intro__img--form" src="img/intro-sedona.svg" alt="Sedona.">
+        <img class="intro-img intro-img__sedona intro__img--form" src="img/intro-sedona.svg" alt="Sedona.">
       </picture>
     </div>
-    <div class="content__title">
-      <h1 class="content__title-head content-head">Оставьте свой отзыв</h1>
-      <h2 class="content-head__sub">Помогите нашим отелям стать лучше! Оставьте&nbsp;отзыв&nbsp;о&nbsp;них,
-        <span class="content__head--addition">а&nbsp;также&nbsp;о посещенных&nbsp;Вами достопримечательностях</span>
-      </h2>
+    <div class="content-title">
+      <h1 class="content-title content-title__head">Оставьте свой отзыв</h1>
+      <h2 class="content-head content-head__sub">Помогите нашим отелям стать лучше!
+        Оставьте&nbsp;отзыв&nbsp;о&nbsp;них,а&nbsp;также&nbsp;о посещенных&nbsp;Вами достопримечательностях</h2>
     </div>
-    <div class="form__content">
-      <div class="content__user-information">
-        <fieldset class="content__introduce introduce">
-          <h2 class="introduce__title form__title">Представьтесь:</h2>
-          <div class="introduce__name">
-            <p class="introduce__description">Имя*:</p>
-            <input class="introduce__text-area text-area" type="text" value="Пётр">
-          </div>
-          <div class="introduce__surname">
-            <p class="introduce__description">Фамилия*:</p>
-            <input class="introduce__text-area text-area" type="text" value="Пустота">
-          </div>
-          <div class="introduce__patronymic">
-            <p class="introduce__description">Отчество:</p>
-            <input class="introduce__text-area text-area" type="text" value="Викторович">
-          </div>
-        </fieldset>
-        <fieldset class="content__information information">
-          <h2 class="information__title form__title">Контактная информация:</h2>
-          <p class="information__description">Контактный телефон*:</p>
-          <div class="information__phone">
-            <input class="information__text text-area" type="tel" value="Введите телефон">
-            <span class="information__phone-block"><img class="information__phone-img" src="/img/phone.svg"
-                alt="Иконка телефона"></span>
-          </div>
-          <p class="information__description">Электронная почта*:</p>
-          <div class="information__e-mail">
-            <input class="information__text text-area" type="tel" value="Введите e-mail">
-            <span class="information__e-mail-block"><img class="information__e-mail-img" src="/img/mail.svg"
-                alt="Иконка почты"></span>
-          </div>
-        </fieldset>
+    <div class="form form__content">
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <div class="comtent-user content__user-information">
+          <fieldset class="content content__introduce introduce">
+            <h2 class="introduce introduce__title form__title">Представьтесь:</h2>
+            <div class="introduce introduce__name">
+              <p class="introduce introduce__description">Имя*:</p>
+              <input class="introduce introduce__text-area text-area" type="text" placeholder="Пётр">
+            </div>
+            <div class="introduce introduce__surname">
+              <p class="introduce introduce__description">Фамилия*:</p>
+              <input class="introduce introduce__text-area text-area" type="text" placeholder="Пустота">
+            </div>
+            <div class="introduce introduce__patronymic">
+              <p class="introduce introduce__description">Отчество:</p>
+              <input class="introduce introduce__text-area text-area" type="text" placeholder="Викторович">
+            </div>
+          </fieldset>
+          <fieldset class="content content__information information">
+            <h2 class="information information__title form__title">Контактная информация:</h2>
+            <p class="information information__description">Контактный телефон*:</p>
+            <div class="information information__phone">
+              <input class="information information__text text-area" type="tel" placeholder="Введите телефон">
+              <span class="information information__phone-block"><img class="information__phone-img"
+                  src="/img/phone.svg" alt="Иконка телефона"></span>
+            </div>
+            <p class="information information__description">Электронная почта*:</p>
+            <div class="information information__e-mail">
+              <input class="information information__text text-area" type="tel" placeholder="Введите e-mail">
+              <span class="information information__e-mail-block"><img class="information__e-mail-img"
+                  src="/img/mail.svg" alt="Иконка почты"></span>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+    <div class="content content__rating rating">
+      <h2 class="rating rating__title form__title">Ваше общее впечатление:</h2>
+      <div class="rating rating__radio-box">
+        <label class="rating rating__radio-label" for="rating__radio-positive"><input class="rating__radio" type="radio"
+            name="rating__radio" id="rating__radio-positive" placeholder="Скорее положительное" checked>
+          <span class="rating rating__fake-input fake-input"></span>
+          <span class="rating rating__text">Скорее положительное</span>
+        </label>
+        <label class="rating rating__radio-label" for="rating__radio-negative"><input class="rating__radio" type="radio"
+            name="rating__radio" id="rating__radio-negative" placeholder="Скорее отрицательное"><span
+            class="rating__fake-input fake-input"></span>
+          <span class="rating rating__text">Скорее отрицательное</span>
+        </label>
+        <label class="rating rating__radio-label" for="rating__radio-none"><input class="rating__radio" type="radio"
+            name="rating__radio" id="rating__radio-none" placeholder="Затрудняюсь ответить"><span
+            class="rating__fake-input fake-input"></span>
+          <span class="rating rating__text">Затрудняюсь ответить</span>
+        </label>
       </div>
     </div>
-    <div class="content__rating rating">
-      <h2 class="rating__title form__title">Ваше общее впечатление:</h2>
-      <div class="rating__radio-box">
-        <label class="rating__radio-label" for="rating__radio-positive"><input class="rating__radio" type="radio"
-            name="rating__radio" id="rating__radio-positive" value="Скорее положительное" checked>
-          <span class="rating__fake-input fake-input"></span>
-          <span class="rating__text">Скорее положительное</span>
-        </label>
-        <label class="rating__radio-label" for="rating__radio-negative"><input class="rating__radio" type="radio"
-            name="rating__radio" id="rating__radio-negative" value="Скорее отрицательное"><span
-            class="rating__fake-input fake-input"></span>
-          <span class="rating__text">Скорее отрицательное</span>
-        </label>
-        <label class="rating__radio-label" for="rating__radio-none"><input class="rating__radio" type="radio"
-            name="rating__radio" id="rating__radio-none" value="Затрудняюсь ответить"><span
-            class="rating__fake-input fake-input"></span>
-          <span class="rating__text">Затрудняюсь ответить</span>
-        </label>
-      </div>
-    </div>
-    <div class="content__attraction attraction">
-      <h2 class="attraction__title form__title">Посещенные<br> достопримечательности:</h2>
-      <div class="attraction__check"><span class="visually-hidden">
-          <span class="attraction__text">Выбор посещенных
+    <div class="content content__attraction attraction">
+      <h2 class="attraction attraction__title form__title">Посещенные<br> достопримечательности:</h2>
+      <div class="attraction attraction__check"><span class="visually-hidden">
+          <span class="attraction attraction__text">Выбор посещенных
             достопримечательностей.</span>
         </span>
-        <label class="attraction__label" for="devil-bridge"><input class="attraction__checkbox visually-hidden"
-            name="devil-bridge" type="checkbox" id="devil-bridge" value="Мост Дьявола" checked><span
-            class="attraction__fake-input fake-input"></span>
-          <span class="attraction__text">Мост
+        <label class="attraction attraction__label" for="devil-bridge"><input
+            class="attraction__checkbox visually-hidden" name="devil-bridge" type="checkbox" id="devil-bridge"
+            placeholder="Мост Дьявола" checked><span class="attraction__fake-input fake-input"></span>
+          <span class="attraction attraction__text">Мост
             Дьявола</span>
         </label>
-        <label class="attraction__label" for="mount-bell"><input class="attraction__checkbox visually-hidden"
-            name="mount-bell" type="checkbox" id="mount-bell" value="Гора-Колокол" checked><span
-            class="attraction__fake-input fake-input"></span>
-          <span class="attraction__text">Гора-Колокол</span>
+        <label class="attraction attraction__label" for="mount-bell"><input class="attraction__checkbox visually-hidden"
+            name="mount-bell" type="checkbox" id="mount-bell" placeholder="Гора-Колокол" checked><span
+            class="attraction attraction__fake-input fake-input"></span>
+          <span class="attraction attraction__text">Гора-Колокол</span>
         </label>
-        <label class="attraction__label" for="slide-park"><input class="attraction__checkbox visually-hidden"
-            name="slide-park" type="checkbox" id="slide-park" value="Слайд-парк" checked><span
+        <label class="attraction attraction__label" for="slide-park"><input class="attraction__checkbox visually-hidden"
+            name="slide-park" type="checkbox" id="slide-park" placeholder="Слайд-парк" checked><span
             class="attraction__fake-input fake-input"></span>
-          <span class="attraction__text">Слайд-парк</span>
+          <span class="attraction attraction__text">Слайд-парк</span>
         </label>
-        <label class="attraction__label" for="red-rocks"><input class="attraction__checkbox visually-hidden"
-            name="red-rocks" type="checkbox" id="red-rocks" value="Красные скалы"><span
+        <label class="attraction attraction__label" for="red-rocks"><input class="attraction__checkbox visually-hidden"
+            name="red-rocks" type="checkbox" id="red-rocks" placeholder="Красные скалы"><span
             class="attraction__fake-input fake-input"></span>
-          <span class="attraction__text">Красные
+          <span class="attraction attraction__text">Красные
             скалы</span>
         </label>
       </div>
     </div>
-    <div class="content__review review">
-      <h2 class="review__title form__title">Опишите свои эмоции:</h2>
-      <textarea class="review__textarea">Опишите подробно все свои восторги</textarea>
-      <span class="review__bottom">
-        <button class="review__button" type="button" value="Отправить отзыв">Отправить отзыв</button>
-        <span class="review__text">* — обязательные поля</span>
+    <div class="content content__review review">
+      <h2 class="review review__title form__title">Опишите свои эмоции:</h2>
+      <textarea class="review review__textarea">Опишите подробно все свои восторги</textarea>
+      <span class="review review__bottom">
+        <button class="review review__button" type="submit" value="Отправить отзыв">Отправить отзыв</button>
+        <span class="review review__text">* — обязательные поля</span>
       </span>
     </div>
 
@@ -300,19 +301,21 @@
   <footer class="footer footer__form theme-light">
     <span class="footer__title">#visitSEDONA</span>
     <ul class="footer__socials socials">
-      <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">VKontakte</span>
+      <li class="socials socials__item"><a class="socials__link" href="#"><span class="visually-hidden">VKontakte</span>
           <svg>
             <use xlink:href="#vk"></use>
           </svg>
         </a>
       </li>
-      <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">Telegram</span>
+      <li class="socials socials__item"><a class="socials socials__link" href="#"><span
+            class="visually-hidden">Telegram</span>
           <svg>
             <use xlink:href="#tg"></use>
           </svg>
         </a>
       </li>
-      <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">YouTube</span>
+      <li class="socials socials__item"><a class="socials socials__link" href="#"><span
+            class="visually-hidden">YouTube</span>
           <svg>
             <use xlink:href="#yt"></use>
           </svg>
@@ -331,18 +334,19 @@
   </footer>
 
   <div class="modal">
-    <div class="modal__error modal-error">
-      <h2 class="modal-error__title">Что-то пошло не так!</h2>
-      <h3 class="modal-error__description">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить
+    <div class="modal modal__error modal-error">
+      <h2 class="modal modal-error__title">Что-то пошло не так!</h2>
+      <h3 class="modal modal-error__description">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить
       </h3>
-      <button class="modal-error__button button" type="button" value="Ок.">Ок</button>
+      <button class="modal modal-error__button button" type="button" value="Ок.">Ок</button>
     </div>
-    <div class="modal__succsess modal-success">
-      <h2 class="modal-succsess__title">Ваш отзыв отправлен!</h2>
-      <h3 class="modal-succsess__description">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время
+    <div class="modal modal__succsess modal-success">
+      <h2 class="modal modal-succsess__title">Ваш отзыв отправлен!</h2>
+      <h3 class="modal modal-succsess__description">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее
+        время
         мы
         опубликуем его на сайте.</h3>
-      <button class="modal-succsess__button button" type="button" value="Закрыть окно.">Закрыть окно</button>
+      <button class="modal modal-succsess__button button" type="button" value="Закрыть окно.">Закрыть окно</button>
     </div>
   </div>
   <script src="/js/script.js" defer></script>
