@@ -81,8 +81,7 @@
   color: $grey;
 
   @media (min-width: $tablet-width) {
-    padding: 0 10px;
-    padding-top: 3px;
+    padding: 3px 35px 0;
   }
 }
 
@@ -100,5 +99,14 @@
 
   @media (min-width: $tablet-width) {
     padding: 2.5px 38px;
+  }
+}
+
+.text--index {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 }

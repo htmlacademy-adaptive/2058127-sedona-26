@@ -93,7 +93,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 60px;
-    padding-top: 45px;
+    padding-top: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -142,5 +142,15 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.content__card:last-child {
+  & .card__content-block {
+    padding-bottom: 43px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
   }
 }

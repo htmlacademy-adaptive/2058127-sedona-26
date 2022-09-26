@@ -1,5 +1,5 @@
 .content-title-form {
-  padding-top: 43px;
+  padding-top: 0;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 700;
@@ -9,4 +9,8 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
 }

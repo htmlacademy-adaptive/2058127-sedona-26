@@ -152,7 +152,7 @@
 
 
   <header class="header">
-    <a class="logo" href="index.html" alt="Логотип.">
+    <a class="logo" href="index.html" aria-label="Логотип.">
       <svg class="logo__svg">
         <use xlink:href="#logo"></use>
       </svg>
@@ -199,59 +199,59 @@
     </div>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <div class="content-title content-title-form">
-        <h1 class="content-title__head">Оставьте свой отзыв</h1>
-        <h2 class="content-title__sub">Помогите нашим отелям стать лучше!
-          Оставьте&nbsp;отзыв&nbsp;о&nbsp;них,а&nbsp;также&nbsp;о посещенных&nbsp;Вами достопримечательностях</h2>
+        <h1 class="content-title__head content-title__head--form">Оставьте свой отзыв</h1>
+        <h2 class="content-title__sub content-title__sub--form">Помогите нашим отелям стать лучше!
+          Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</h2>
       </div>
       <div class="form">
-        <label class="content-user content__user-information">
+        <div class="content-user content__user-information">
           <fieldset class="content__introduce introduce">
             <h2 class="introduce__title">Представьтесь:</h2>
-            <div class="introduce__name">
+            <label class="introduce__name">
               <span class="introduce__description">Имя*:</span >
               <input class="introduce__text-area text-area" type="text" placeholder="Пётр">
-            </div>
-            <div class="introduce__surname">
+            </label>
+            <label class="introduce__surname">
               <span  class="introduce__description">Фамилия*:</span >
               <input class="introduce__text-area text-area" type="text" placeholder="Пустота">
-            </div>
-            <div class="introduce__patronymic">
+            </label>
+            <label class="introduce__patronymic">
               <span  class="introduce__description">Отчество:</span >
               <input class="introduce__text-area text-area" type="text" placeholder="Викторович">
-            </div>
+            </label>
           </fieldset>
           <fieldset class="content__information information">
             <h2 class="information__title">Контактная информация:</h2>
-            <span  class="information__description">Контактный телефон*:</span >
-            <div class="information__phone">
+            <span class="information__description">Контактный телефон*:</span >
+            <label class="information__phone">
               <input class="information__text text-area" type="tel" placeholder="Введите телефон">
               <span class="information__phone-block"><img class="information__phone-img" src="./img/phone.svg"
                   alt="Иконка телефона"></span>
-            </div>
+            </label>
             <span class="information__description">Электронная почта*:</span>
-            <div class="information__e-mail">
+            <label class="information__e-mail">
               <input class="information__text text-area" type="tel" placeholder="Введите e-mail">
               <span class="information__e-mail-block"><img class="information__e-mail-img" src="./img/mail.svg"
                   alt="Иконка почты"></span>
-            </div>
+            </label>
           </fieldset>
         </div>
       </div>
       <div class="content__rating rating">
         <h2 class="rating__title">Ваше общее впечатление:</h2>
         <div class="rating__radio-box">
-          <label class="rating__radio-label label" for="rating__radio-positive"><input class="rating__radio" type="radio"
-              name="rating__radio" id="rating__radio-positive" placeholder="Скорее положительное" checked>
+          <label class="rating__radio-label label" for="rating__radio-positive">
+            <input class="rating__radio" type="radio" name="rating__radio" id="rating__radio-positive" checked>
             <span class="rating__fake-input fake-input"></span>
             <span class="rating__text">Скорее положительное</span>
           </label>
           <label class="rating__radio-label label" for="rating__radio-negative"><input class="rating__radio" type="radio"
-              name="rating__radio" id="rating__radio-negative" placeholder="Скорее отрицательное"><span
+              name="rating__radio" id="rating__radio-negative"><span
               class="rating__fake-input fake-input"></span>
             <span class="rating__text">Скорее отрицательное</span>
           </label>
           <label class="rating__radio-label label" for="rating__radio-none"><input class="rating__radio" type="radio"
-              name="rating__radio" id="rating__radio-none" placeholder="Затрудняюсь ответить"><span
+              name="rating__radio" id="rating__radio-none"><span
               class="rating__fake-input fake-input"></span>
             <span class="rating__text">Затрудняюсь ответить</span>
           </label>
@@ -264,23 +264,23 @@
               достопримечательностей.</span>
           </span>
           <label class="attraction__label label" for="devil-bridge"><input class="attraction__checkbox visually-hidden"
-              name="devil-bridge" type="checkbox" id="devil-bridge" placeholder="Мост Дьявола" checked><span
+              name="devil-bridge" type="checkbox" id="devil-bridge" checked><span
               class="attraction__fake-input fake-input"></span>
             <span class="attraction__text">Мост
               Дьявола</span>
           </label>
           <label class="attraction__label label" for="mount-bell"><input class="attraction__checkbox visually-hidden"
-              name="mount-bell" type="checkbox" id="mount-bell" placeholder="Гора-Колокол" checked><span
+              name="mount-bell" type="checkbox" id="mount-bell"checked><span
               class="attraction__fake-input fake-input"></span>
             <span class="attraction__text">Гора-Колокол</span>
           </label>
           <label class="attraction__label label" for="slide-park"><input class="attraction__checkbox visually-hidden"
-              name="slide-park" type="checkbox" id="slide-park" placeholder="Слайд-парк" checked><span
+              name="slide-park" type="checkbox" id="slide-park"checked><span
               class="attraction__fake-input fake-input"></span>
             <span class="attraction__text">Слайд-парк</span>
           </label>
           <label class="attraction__label label" for="red-rocks"><input class="attraction__checkbox visually-hidden"
-              name="red-rocks" type="checkbox" id="red-rocks" placeholder="Красные скалы"><span
+              name="red-rocks" type="checkbox" id="red-rocks"><span
               class="attraction__fake-input fake-input"></span>
             <span class="attraction__text">Красные
               скалы</span>
@@ -299,7 +299,7 @@
 
   </main>
 
-  <footer class="footer footer-form theme-light">
+  <footer class="footer footer--form theme-light">
     <span class="footer__title">#visitSEDONA</span>
     <ul class="footer__socials socials">
       <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">VKontakte</span>

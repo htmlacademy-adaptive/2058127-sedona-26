@@ -43,7 +43,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     font-size: 21px;
-    padding: 8px 119px;
+    padding: 10px 119px;
   }
 }
 
@@ -64,6 +64,10 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 4px;
+
+    &--bridge {
+      max-width: 270px;
+    }
   }
 }
 

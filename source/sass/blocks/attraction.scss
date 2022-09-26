@@ -25,11 +25,20 @@
 
 .attraction__title {
   margin-top: 0;
-  margin-left: -2px;
-  padding: 0 279px;
+  margin-bottom: 28px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 132px;
+    font-size: 21px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 279px;
+  }
 }
 
 .attraction__checkbox {
