@@ -10,7 +10,7 @@
   content: "";
   position: absolute;
   bottom: 0;
-  background-image: url("/img/intro-triangle.svg");
+  background-image: url("../img/intro-triangle.svg");
   background-repeat: no-repeat;
   width: 100%;
   height: 56px;
@@ -19,6 +19,7 @@
 
 .intro__catalog {
   min-height: 158px;
+
 
   @media (min-width: $tablet-width) {
     min-height: 290px;
@@ -37,37 +38,11 @@
   }
 }
 
-.intro__sedona {
-  position: relative;
-  background-image: url("/img/intro__sedona__desktop.jpg");
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.intro__img--catalog {
+  padding-top: 12px;
 
-@media (min-resolution: 2dppx) {
-  .intro__sedona {
-    background-image: url("/img/intro__sedona__desktop@2x.jpg");
-  }
-}
-
-.intro__sedona::after {
-  content: "";
-  position: absolute;
-  background-image: url("/img/intro-triangle.svg");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 56px;
-  background-position: center;
-}
-
-.intro__sedona--catalog {
-  padding-bottom: 24px;
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 19px;
-    min-height: 300px;
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -82,26 +57,5 @@
 }
 
 .intro__img--index::after {
-  background-image: url("/img/intro-triangle.svg");
-}
-
-.intro__sedona-svg {
-  display: none;
-  color: $white;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.intro__form--tablet {
-  @media (min-width: $tablet-width) {
-    padding-bottom: 25px;
-  }
-}
-
-.intro__form--desktop {
-  @media (min-width: $desktop-width) {
-    min-height: 299px;
-  }
+  background-image: url("../img/intro-triangle.svg");
 }

@@ -1,10 +1,14 @@
+
+
+
+
 .footer {
   display: flex;
   flex-direction: column;
   gap: 19px;
   align-items: center;
   background: $white;
-  padding: 38.5px 0;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -15,6 +19,31 @@
 
   @media (min-width: $desktop-width) {
     padding: 23.5px 120px;
+  }
+}
+
+.footer--catalog {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.footer--form {
+  padding-top: 18.5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 86.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59.5px 120px;
   }
 }
 
@@ -32,6 +61,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
+
+.footer__socials {
+  padding: 0;
 }
 
 .footer__academy-link {
@@ -64,18 +97,6 @@
   color: $text-active;
 }
 
-.footer__form {
-  padding-top: 18.5px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 86.5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 48.5px;
-  }
-}
-
 .footer__catalog {
   padding: 24.5px 0;
 
@@ -87,3 +108,5 @@
     padding: 101.5px 120px;
   }
 }
+
+

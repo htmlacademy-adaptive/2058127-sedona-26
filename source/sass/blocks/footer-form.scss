@@ -1,0 +1,11 @@
+.footer-form {
+  padding-top: 18.5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 86.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59.5px 120px;
+  }
+}

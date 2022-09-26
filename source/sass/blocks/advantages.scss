@@ -12,7 +12,7 @@
 
 .advantages::before {
   position: absolute;
-  background-image: url("/img/triangle-content.svg");
+  background-image: url("../img/triangle-content.svg");
   background-repeat: no-repeat;
   content: "";
   width: 100%;
@@ -21,20 +21,6 @@
 
   @include tablet {
     display: none;
-  }
-}
-
-.advantages__title {
-  position: relative;
-  padding-top: 31px;
-  font-family: $font-stack;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 49px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 61px;
   }
 }
 
@@ -51,7 +37,7 @@
   }
 }
 
-.advantages__list--house-svg {
+.advantages__list-house-svg {
   margin-left: 4px;
   width: 53px;
   padding-top: 13px;
@@ -70,7 +56,7 @@
   }
 }
 
-.advantages__list--burger-svg {
+.advantages__list-burger-svg {
   margin-left: 4px;
   width: 53px;
   padding-top: 9px;
@@ -89,7 +75,7 @@
   }
 }
 
-.advantages__list--gift-svg {
+.advantages__list-gift-svg {
   padding-top: 7px;
   padding-left: 21px;
   margin-left: 1px;
@@ -97,10 +83,10 @@
   height: 73px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 61px;
+    padding-top: 59px;
     padding-left: 86px;
-    width: 161px;
-    height: 133px;
+    width: 167px;
+    height: 134px;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,40 +126,6 @@
   }
 }
 
-.advantages__head {
-  margin: 0 auto;
-  margin-right: 5px;
-  font-family: $font-stack;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 27px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: $black;
-
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
-    line-height: 26px;
-  }
-}
-
-.advantages__description {
-  margin: 0;
-  padding-top: 34px;
-  font-family: $font-stack;
-  font-size: 14px;
-  line-height: 21px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 30px;
-  }
-}
-
 .advantages__city-img {
   display: block;
   margin: 0 auto;
@@ -181,19 +133,25 @@
   max-height: 260px;
 
   @media (min-width: $tablet-width) {
-    height: 256px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-height: initial;
   }
 }
 
-.advantages__bridge-photo {
+.advantages__bridge-photo-img {
   display: block;
+  margin: 0 auto;
+  min-width: 320px;
+  max-height: 260px;
 }
 
 .advantages__about-city {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
   }
 }
 

@@ -1,0 +1,22 @@
+/* Меню закрытия */
+
+.nav-closed {
+  .site-list {
+    display: none;
+  }
+
+  .site-list__link {
+    color: currentColor;
+  }
+
+  .site-list__link--active {
+    color: $brown;
+  }
+
+  @include tablet {
+    .site-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+}

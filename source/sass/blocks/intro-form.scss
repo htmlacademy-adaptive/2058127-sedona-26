@@ -1,0 +1,9 @@
+.intro-form {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 299px;
+  }
+}

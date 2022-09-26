@@ -1,0 +1,16 @@
+.content-title-form {
+  padding-top: 0;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+}

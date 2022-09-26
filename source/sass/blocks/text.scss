@@ -38,7 +38,7 @@
 }
 
 .text__title--tourists {
-  padding-top: 27px;
+  padding-top: 41px;
 
   @media (min-width: $tablet-width) {
     padding: 0 48px;
@@ -70,9 +70,7 @@
 
 .text__description--index {
   margin: 0;
-  padding: 0;
-  padding-top: 4px;
-  padding-bottom: 14.5px;
+  padding: 4px 19px 14.5px;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 400;
@@ -83,24 +81,32 @@
   color: $grey;
 
   @media (min-width: $tablet-width) {
-    padding: 0 10px;
-    padding-top: 3px;
+    padding: 3px 35px 0;
   }
 }
 
 .text__description--road {
-  padding-right: 2px;
+  padding: 3.5px 48px;
 
   @media (min-width: $tablet-width) {
-    padding: 2.5px 50px;
+    padding: 2.5px 60px;
     margin-right: 3px;
   }
 }
 
 .text__description--tourists {
-  padding-top: 6px;
+  padding: 4px 31px 15.5px;
 
   @media (min-width: $tablet-width) {
     padding: 2.5px 38px;
+  }
+}
+
+.text--index {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 }
