@@ -38,7 +38,7 @@
 }
 
 .text__title--tourists {
-  padding-top: 27px;
+  padding-top: 41px;
 
   @media (min-width: $tablet-width) {
     padding: 0 48px;
@@ -89,16 +89,16 @@
 }
 
 .text__description--road {
-  padding-right: 2px;
+  padding: 3.5px 48px;
 
   @media (min-width: $tablet-width) {
-    padding: 2.5px 50px;
+    padding: 2.5px 52px;
     margin-right: 3px;
   }
 }
 
 .text__description--tourists {
-  padding-top: 6px;
+  padding: 4px 31px 15.5px;
 
   @media (min-width: $tablet-width) {
     padding: 2.5px 38px;

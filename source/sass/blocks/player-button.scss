@@ -1,6 +1,11 @@
 .player-button {
-  display: flex;
-  justify-content: center;
-  background: none;
   border: 0;
+  background-image: url("/img/player-button.svg");
+  position: absolute;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  top: 60%;
+  transform: translateX(-50%);
+  left: 50%;
 }

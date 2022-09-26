@@ -1,0 +1,8 @@
+.intro-sedona-svg {
+  display: none;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

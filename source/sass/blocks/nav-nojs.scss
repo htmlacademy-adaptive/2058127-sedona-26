@@ -1,0 +1,97 @@
+/* Меню без JS */
+
+.nav-nojs {
+  @media (max-width: $mobile-width-only) {
+    z-index: 10;
+    margin: 0;
+
+    .nav__button {
+      display: none;
+    }
+
+    .site-list__link {
+      color: $white;
+    }
+
+    .site-list__link:hover {
+      color: $white;
+    }
+
+    .site-list__link:active {
+      color: $menu-open-text-active;
+    }
+
+    .site-list__link:focus {
+      color: $white;
+    }
+
+    .site-list__item:hover {
+      background-color: $text-box-bg-hover;
+      border-top: 1px soild $text-box-bg-hover;
+      border-bottom: 1px solid $text-box-bg-hover;
+    }
+
+    .site-list__item:active {
+      background-color: $text-box-bg-active;
+      border-top: 1px soild $text-box-bg-active;
+      border-bottom: 1px solid $text-box-bg-active;
+    }
+
+    .site-list__item:disabled {
+      background-color: $text-box-bg-disabled_ckeckbox-hover;
+      border-top: 1px soild $text-box-bg-disabled_ckeckbox-hover;
+      border-bottom: 1px solid $text-box-bg-disabled_ckeckbox-hover;
+    }
+
+
+    .site-list__item {
+      border-top: 1px solid #678fa8;
+      border-bottom: 1px solid #9ac2db;
+      padding-top: 19px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav__list {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .nav-opened .nav__button {
+      z-index: 10;
+      top: 0;
+      right: auto;
+      left: 0;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 24px;
+        left: 18px;
+        width: 36px;
+        height: 2px;
+        background-color: #ffffff;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &:active::before,
+      &:active::after {
+        background-color: fade(#ffffff, 30%);
+      }
+    }
+  }
+}

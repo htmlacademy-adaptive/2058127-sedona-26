@@ -1,0 +1,37 @@
+.content-title__head {
+  margin: 0 auto;
+  padding-top: 114px;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.content-title__sub {
+  margin: 23px auto;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 133px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9.5px 349px;
+  }
+}

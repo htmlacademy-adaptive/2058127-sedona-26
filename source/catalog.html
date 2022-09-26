@@ -99,7 +99,7 @@
         fill="white" />
     </symbol>
     <!-- intro sedona -->
-    <symbol class="intro__sedona-svg" id="intro__sedona-svg" width="460" height="80" viewBox="0 0 460 80"
+    <symbol class="intro-sedona-svg" id="intro-sedona-svg" width="460" height="80" viewBox="0 0 460 80"
       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M44.3 21.7C40.7 18.7 36.2 16.7 31.4 16.7C27.8 16.7 23.1 18.8 23.1 23C23.1 27.4 28.4 29.1 31.7 30.1L36.7 31.6C47.1 34.7 55.2 39.9 55.2 52C55.2 59.4 53.4 67.1 47.5 72.1C41.6 77.1 33.8 79.1 26.3 79.1C16.9 79.1 7.6 75.9 0 70.6L8.3 54.9C13.2 59.2 18.9 62.6 25.6 62.6C30.2 62.6 35 60.3 35 55.1C35 49.6 27.4 47.8 23.2 46.6C10.8 43.3 2.8 40.1 2.8 25.6C2.8 10.4 13.6 0.5 28.6 0.5C36.1 0.5 45.4 2.9 52 6.7L44.3 21.7Z"
@@ -151,23 +151,23 @@
   </svg>
 
   <header class="header">
-    <a class="logo" href="index.html">
-      <svg class="logo">
+    <a class="logo" href="index.html" alt="Логотип.">
+      <svg class="logo__svg">
         <use xlink:href="#logo"></use>
       </svg>
     </a>
-    <nav class="nav nav-menu nav-menu__closed nav__nojs">
+    <nav class="nav nav-closed nav-nojs">
       <button class="nav__button reset-list" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="index.html">
+          <a class="site-list__link site-list__link--active" href="index.html">
             Главная
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--active" href="catalog.html">
+          <a class="site-list__link" href="catalog.html">
             Фото и видео
           </a>
         </li>
@@ -184,26 +184,28 @@
       </ul>
     </nav>
   </header>
+  <script src="script.js"></script>
 
   <main class="content">
-    <div class="intro intro__sedona intro__sedona--catalog">
-      <svg class="intro__sedona-svg" width="459.5" height="79.8px">
-        <use xlink:href="#intro__sedona-svg"></use>
+    <div class="intro intro-sedona intro-catalog">
+      <svg class="intro-sedona-svg" width="459.5" height="79.8px">
+        <use xlink:href="#intro-sedona-svg"></use>
       </svg>
       <picture>
         <img class="intro__img intro__img--sedona intro__img--form" src="img/intro-sedona.svg" alt="Sedona.">
       </picture>
     </div>
-    <div class="content__title">
-      <h1 class="content-head">Фото и видео</h1>
-      <h2 class="content-head__sub--catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам
+    <div class="content-title">
+      <h1 class="content-title__head">Фото и видео</h1>
+      <h2 class="content-title__sub">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам
         забыть о политике и экономике.</h2>
     </div>
     <div class="content__block-card">
       <div class="content__card content__card--head card">
         <a class="picture-link" href="#">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/card-1-desktop.jpg" 1x,  srcset="img/card-1-desktop@2x.jpg" 2x>
+            <source media="(min-width: 1280px)" srcset="img/card-1-desktop.jpg" 1x, srcset="img/card-1-desktop@2x.jpg"
+              2x>
             <source media="(min-width: 768px)" srcset="img/card-1-tablet.jpg" 1x, srcset="img/card-1-tablet@2x.jpg" 2x>
             <img class="card__image--title" src="img/card-1-mobile.jpg" srcset="img/card-1-mobile@2x.jpg"
               alt="Народные просторы. Дорога, уходящая в закат.">
@@ -227,8 +229,10 @@
         <div class="content__card card">
           <a class="picture-link" href="#">
             <picture>
-              <source media="(min-width: 1280px)" srcset="img/card-2-desktop.jpg" 1x, srcset="img/card-2-desktop@2x.jpg" 2x>
-              <source media="(min-width: 768px)" srcset="img/card-2-tablet.jpg" 1x, srcset="img/card-2-tablet@2x.jpg" 2x>
+              <source media="(min-width: 1280px)" srcset="img/card-2-desktop.jpg" 1x, srcset="img/card-2-desktop@2x.jpg"
+                2x>
+              <source media="(min-width: 768px)" srcset="img/card-2-tablet.jpg" 1x, srcset="img/card-2-tablet@2x.jpg"
+                2x>
               <img class="card__image" src="img/card-2-mobile.jpg" srcset="img/card-2-mobile@2x.jpg"
                 alt="Местная растительность. Кактус на фоне каньона.">
             </picture>
@@ -250,8 +254,10 @@
         <div class="content__card card">
           <a class="picture-link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/card-3-desktop.jpg" 1x, srcset="img/card-3-desktop@2x.jpg" 2x>
-              <source media="(min-width: 768px)" srcset="img/card-3-tablet.jpg" 1x, srcset="img/card-3-tablet@2x.jpg" 2x>
+              <source media="(min-width: 1200px)" srcset="img/card-3-desktop.jpg" 1x, srcset="img/card-3-desktop@2x.jpg"
+                2x>
+              <source media="(min-width: 768px)" srcset="img/card-3-tablet.jpg" 1x, srcset="img/card-3-tablet@2x.jpg"
+                2x>
               <img class="card__image" src="img/card-3-mobile.jpg" srcset="img/card-3-mobile@2x.jpg"
                 alt="Дорога на север. Серпантиновая дорога среди горного леса.">
             </picture>
@@ -273,9 +279,12 @@
         <div class="content__card card">
           <a class="picture-link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/card-4-desktop.jpg" 1x, srcset="img/card-4-desktop@2x.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-4-tablet.jpg"1x, srcset="img/card-4-tablet@2x.jpg" 2x>
-              <img class="card__image" src="img/card-4-mobile.jpg" srcset="img/card-4-mobile@2x.jpg" alt="Мост Дьявола. Фото каньона и простор.">
+              <source media="(min-width: 1200px)" srcset="img/card-4-desktop.jpg" 1x,
+                srcset="img/card-4-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/card-4-tablet.jpg" 1x, srcset="img/card-4-tablet@2x.jpg"
+                2x>
+              <img class="card__image" src="img/card-4-mobile.jpg" srcset="img/card-4-mobile@2x.jpg"
+                alt="Мост Дьявола. Фото каньона и простор.">
             </picture>
           </a>
           <div class="card__content--block">
@@ -298,18 +307,17 @@
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <h3 class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</h3>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/video-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/video-tablet.svg">
+        <img class="video-player" src="img/video-player.jpg" alt="Видеоплеер.">
+      </picture>
       <button class="player-button" type="button">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/video-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/video-tablet.svg">
-          <img class="video-player" src="img/video-player.jpg" alt="Видеоплеер.">
-        </picture>
-        <img class="video-player__polygon" src="/img/polygon.svg" width="50" height="50" alt="Запустить плеер.">
       </button>
     </div>
   </main>
 
-  <footer class="footer footer__catalog theme-light">
+  <footer class="footer theme-light">
     <span class="footer__title">#visitSEDONA</span>
     <ul class="footer__socials socials">
       <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">VKontakte</span>

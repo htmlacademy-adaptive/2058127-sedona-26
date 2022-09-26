@@ -119,24 +119,6 @@
   }
 }
 
-.content-title__head {
-  margin: 0 auto;
-  padding-top: 114px;
-  font-family: $font-stack;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: $black;
-
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
-  }
-}
-
 .content__introduce {
   display: flex;
   flex-direction: column;

@@ -34,6 +34,10 @@
   }
 }
 
+.footer__socials {
+  padding: 0;
+}
+
 .footer__academy-link {
   color: $black;
   text-decoration: none;
@@ -62,18 +66,6 @@
 
 .footer__logo-academy:active {
   color: $text-active;
-}
-
-.footer__form {
-  padding-top: 18.5px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 86.5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 48.5px;
-  }
 }
 
 .footer__catalog {
