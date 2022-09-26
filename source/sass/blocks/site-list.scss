@@ -52,10 +52,6 @@
 
 .site-list__item:nth-child(4n + 3) {
   grid-column: 4/5;
-
-  @media (min-width: $desktop-width) {
-    margin-right: 120px;
-  }
 }
 
 .site-list__item--active {

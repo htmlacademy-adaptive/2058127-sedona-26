@@ -26,8 +26,10 @@
 .attraction__title {
   margin-top: 0;
   margin-left: -2px;
-  padding: 0;
+  padding: 0 279px;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 21px;
 }
 
 .attraction__checkbox {
@@ -57,15 +59,15 @@
 
 .attraction__fake-input:active {
   background-color: $check-box-active;
-  content: url("/img/tick-active.svg");
+  content: url("../img/tick-active.svg");
   padding-top: 8px;
   padding-right: 12px;
   padding-bottom: 12px;
   padding-left: 12px;
 }
 
-.attraction__checkbox:checked ~ .attraction__fake-input::before {
-  content: url("/img/tick.svg");
+.attraction__checkbox:checked~.attraction__fake-input::before {
+  content: url("../img/tick.svg");
   width: 40px;
   height: 40px;
   position: absolute;

@@ -1,11 +1,20 @@
 .player-button {
   border: 0;
-  background-image: url("/img/player-button.svg");
+  background-image: url(../img/player-button.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
   position: absolute;
   margin: 0 auto;
-  width: 40px;
-  height: 40px;
-  top: 60%;
+  top: 66%;
   transform: translateX(-50%);
   left: 50%;
+  background-size: contain;
+  width: 48px;
+  height: 54px;
+
+  @media (min-width: $tablet-width) {
+    top: 62%;
+    width: 55px;
+    height: 55px;
+  }
 }

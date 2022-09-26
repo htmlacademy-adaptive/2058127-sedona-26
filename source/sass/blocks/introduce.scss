@@ -28,6 +28,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 26px;
+    display: flex;
+    flex-direction: column;
   }
 }
 

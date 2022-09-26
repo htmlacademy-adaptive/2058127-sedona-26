@@ -1,6 +1,6 @@
 .intro-sedona {
   position: relative;
-  background-image: url("/img/intro__sedona__desktop.jpg");
+  background-image: url("../img/intro__sedona__desktop.jpg");
   background-position: center;
   display: flex;
   justify-content: center;
@@ -9,14 +9,14 @@
 
 @media (min-resolution: 2dppx) {
   .intro-sedona {
-    background-image: url("/img/intro__sedona__desktop@2x.jpg");
+    background-image: url("../img/intro__sedona__desktop@2x.jpg");
   }
 }
 
 .intro-sedona::after {
   content: "";
   position: absolute;
-  background-image: url("/img/intro-triangle.svg");
+  background-image: url("../img/intro-triangle.svg");
   background-repeat: no-repeat;
   width: 100%;
   height: 56px;

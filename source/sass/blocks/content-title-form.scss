@@ -1,13 +1,12 @@
-.label {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: center;
-  align-items: center;
+.content-title-form {
+  padding-top: 43px;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
   color: $black;
 }

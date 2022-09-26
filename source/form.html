@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/style.min.css" />
-  <link rel="icon" href="img/favicons/32.svg">
+  <link rel="icon" href="./img/favicons/32.svg">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -193,45 +193,45 @@
         <use xlink:href="#intro-sedona-svg"></use>
       </svg>
       <picture>
-        <source media="(min-width: 768px)" srcset="img/intro-sedona-tablet.svg">
-        <img class="intro-img intro-img--sedona intro__img--form" src="img/intro-sedona.svg" alt="Sedona.">
+        <source media="(min-width: 768px)" srcset="./img/intro-sedona-tablet.svg">
+        <img class="intro-img intro-img--sedona intro__img--form" src="./img/intro-sedona.svg" alt="Sedona.">
       </picture>
     </div>
     <form action="https://echo.htmlacademy.ru/" method="post">
-      <div class="content-title">
+      <div class="content-title content-title-form">
         <h1 class="content-title__head">Оставьте свой отзыв</h1>
         <h2 class="content-title__sub">Помогите нашим отелям стать лучше!
           Оставьте&nbsp;отзыв&nbsp;о&nbsp;них,а&nbsp;также&nbsp;о посещенных&nbsp;Вами достопримечательностях</h2>
       </div>
       <div class="form">
-        <div class="content-user content__user-information">
+        <label class="content-user content__user-information">
           <fieldset class="content__introduce introduce">
             <h2 class="introduce__title">Представьтесь:</h2>
             <div class="introduce__name">
-              <p class="introduce__description">Имя*:</p>
+              <span class="introduce__description">Имя*:</span >
               <input class="introduce__text-area text-area" type="text" placeholder="Пётр">
             </div>
             <div class="introduce__surname">
-              <p class="introduce__description">Фамилия*:</p>
+              <span  class="introduce__description">Фамилия*:</span >
               <input class="introduce__text-area text-area" type="text" placeholder="Пустота">
             </div>
             <div class="introduce__patronymic">
-              <p class="introduce__description">Отчество:</p>
+              <span  class="introduce__description">Отчество:</span >
               <input class="introduce__text-area text-area" type="text" placeholder="Викторович">
             </div>
           </fieldset>
           <fieldset class="content__information information">
             <h2 class="information__title">Контактная информация:</h2>
-            <p class="information__description">Контактный телефон*:</p>
+            <span  class="information__description">Контактный телефон*:</span >
             <div class="information__phone">
               <input class="information__text text-area" type="tel" placeholder="Введите телефон">
-              <span class="information__phone-block"><img class="information__phone-img" src="/img/phone.svg"
+              <span class="information__phone-block"><img class="information__phone-img" src="./img/phone.svg"
                   alt="Иконка телефона"></span>
             </div>
-            <p class="information__description">Электронная почта*:</p>
+            <span class="information__description">Электронная почта*:</span>
             <div class="information__e-mail">
               <input class="information__text text-area" type="tel" placeholder="Введите e-mail">
-              <span class="information__e-mail-block"><img class="information__e-mail-img" src="/img/mail.svg"
+              <span class="information__e-mail-block"><img class="information__e-mail-img" src="./img/mail.svg"
                   alt="Иконка почты"></span>
             </div>
           </fieldset>
@@ -240,17 +240,17 @@
       <div class="content__rating rating">
         <h2 class="rating__title">Ваше общее впечатление:</h2>
         <div class="rating__radio-box">
-          <label class="rating__radio-label" for="rating__radio-positive"><input class="rating__radio" type="radio"
+          <label class="rating__radio-label label" for="rating__radio-positive"><input class="rating__radio" type="radio"
               name="rating__radio" id="rating__radio-positive" placeholder="Скорее положительное" checked>
             <span class="rating__fake-input fake-input"></span>
             <span class="rating__text">Скорее положительное</span>
           </label>
-          <label class="rating__radio-label" for="rating__radio-negative"><input class="rating__radio" type="radio"
+          <label class="rating__radio-label label" for="rating__radio-negative"><input class="rating__radio" type="radio"
               name="rating__radio" id="rating__radio-negative" placeholder="Скорее отрицательное"><span
               class="rating__fake-input fake-input"></span>
             <span class="rating__text">Скорее отрицательное</span>
           </label>
-          <label class="rating__radio-label" for="rating__radio-none"><input class="rating__radio" type="radio"
+          <label class="rating__radio-label label" for="rating__radio-none"><input class="rating__radio" type="radio"
               name="rating__radio" id="rating__radio-none" placeholder="Затрудняюсь ответить"><span
               class="rating__fake-input fake-input"></span>
             <span class="rating__text">Затрудняюсь ответить</span>
@@ -258,28 +258,28 @@
         </div>
       </div>
       <div class="content__attraction attraction">
-        <h2 class="attraction__title">Посещенные<br> достопримечательности:</h2>
+        <h2 class="attraction__title">Посещенные достопримечательности:</h2>
         <div class="attraction__check"><span class="visually-hidden">
             <span class="attraction__text">Выбор посещенных
               достопримечательностей.</span>
           </span>
-          <label class="attraction__label" for="devil-bridge"><input class="attraction__checkbox visually-hidden"
+          <label class="attraction__label label" for="devil-bridge"><input class="attraction__checkbox visually-hidden"
               name="devil-bridge" type="checkbox" id="devil-bridge" placeholder="Мост Дьявола" checked><span
               class="attraction__fake-input fake-input"></span>
             <span class="attraction__text">Мост
               Дьявола</span>
           </label>
-          <label class="attraction__label" for="mount-bell"><input class="attraction__checkbox visually-hidden"
+          <label class="attraction__label label" for="mount-bell"><input class="attraction__checkbox visually-hidden"
               name="mount-bell" type="checkbox" id="mount-bell" placeholder="Гора-Колокол" checked><span
               class="attraction__fake-input fake-input"></span>
             <span class="attraction__text">Гора-Колокол</span>
           </label>
-          <label class="attraction__label" for="slide-park"><input class="attraction__checkbox visually-hidden"
+          <label class="attraction__label label" for="slide-park"><input class="attraction__checkbox visually-hidden"
               name="slide-park" type="checkbox" id="slide-park" placeholder="Слайд-парк" checked><span
               class="attraction__fake-input fake-input"></span>
             <span class="attraction__text">Слайд-парк</span>
           </label>
-          <label class="attraction__label" for="red-rocks"><input class="attraction__checkbox visually-hidden"
+          <label class="attraction__label label" for="red-rocks"><input class="attraction__checkbox visually-hidden"
               name="red-rocks" type="checkbox" id="red-rocks" placeholder="Красные скалы"><span
               class="attraction__fake-input fake-input"></span>
             <span class="attraction__text">Красные
@@ -299,7 +299,7 @@
 
   </main>
 
-  <footer class="footer theme-light">
+  <footer class="footer footer-form theme-light">
     <span class="footer__title">#visitSEDONA</span>
     <ul class="footer__socials socials">
       <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">VKontakte</span>

@@ -1,6 +1,12 @@
+.content-title {
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+  }
+}
+
 .content-title__head {
   margin: 0 auto;
-  padding-top: 114px;
+  padding-top: 38px;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 700;
@@ -13,11 +19,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    padding-top: 71px;
   }
 }
 
 .content-title__sub {
   margin: 23px auto;
+  padding: 0 15px;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 400;
@@ -33,5 +41,18 @@
 
   @media (min-width: $desktop-width) {
     padding: 9.5px 349px;
+  }
+}
+
+.content-title__sub--catalog {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 19px 377px;
   }
 }
